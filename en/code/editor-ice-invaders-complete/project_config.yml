@@ -1,0 +1,4 @@
+name: "Ice invaders"
+identifier: "editor-ice-invaders-complete"
+type: 'code_editor_scratch'
+build: true
