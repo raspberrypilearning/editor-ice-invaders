@@ -19,6 +19,6 @@ Find the speed that makes the game fun.
 
 ## Step 4
 
-Add background music to the game.
+Add background music to the game. 
 
 ![A game with a different backdrop and a different look for the ice.](images/step-18.gif){:width="450px"}
