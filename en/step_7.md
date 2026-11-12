@@ -1,94 +1,65 @@
-## Swing the stick
+## Animate player
 
-Make the player swing when the puck is fired.
+Make the player swing their arm when the puck is shot.
 
 ![player sprite](images/player-sprite.png)
 
-## Step 1
-
 Click on the **player sprite**.
 
-Add a `repeat until`{:class="block3control"} loop.
+## Step 1
+
+Add a `repeat until`{:class="block3control"} loop, with a `mouse down?`{:class="block3sensing"} block.
 
 ```blocks3
-when green flag clicked
-+repeat until < >
+when I receive (reset v)
+go to x: (-159) y: (-58)
+set drag mode [not draggable v]
++ repeat until <mouse down?>
 end
 ```
 
 ## Step 2
 
-Add a `mouse down?`{:class="block3sensing"} block to the loop.
+Add a `switch costume`{:class="block3looks"} block and set to `costume 1`{:class="block3looks"}.
 
 ```blocks3
-when green flag clicked
-repeat until <mouse down?>
-end
-```
-
-## Step 3
-
-Add a `switch costume to`{:class="block3looks"} block set to `costume 1`{:class="block3looks"} inside the loop.
-
-```blocks3
-when green flag clicked
+when I receive (reset v)
+go to x: (-159) y: (-58)
+set drag mode [not draggable v]
 repeat until <mouse down?>
 switch costume to (costume 1 v)
 end
 ```
 
-## Step 4
+## Step 3
 
 Add a `wait until`{:class="block3control"} block with `not mouse down?`{:class="block3sensing"} after the loop.
 
 ```blocks3
-when green flag clicked
+when I receive (reset v)
+go to x: (-159) y: (-58)
+set drag mode [not draggable v]
 repeat until <mouse down?>
 switch costume to (costume 1 v)
 end
 +wait until <not <mouse down?>>
 ```
 
-## Step 5
+## Step 4
 
-Add a `start sound`{:class="block3sound"} block set to `Tennis Hit`{:class="block3sound"}.
+Add another `switch costume to`{:class="block3looks"} block, but set to `costume 2`{:class="block3looks"}. 
 
-```blocks3
-wait until <not <mouse down?>>
-+start sound (Tennis Hit v)
-```
-
-## Step 6
-
-Add a `switch costume to`{:class="block3looks"} block set to `costume 2`{:class="block3looks"}.
+Then add a `wait`{:class="block3control"} and  `switch costume`{:class="block3looks"} back.
 
 ```blocks3
 wait until <not <mouse down?>>
-start sound (Tennis Hit v)
 +switch costume to (costume 2 v)
-```
-
-## Step 7
-
-Add a `wait`{:class="block3control"} block set to `0.3` seconds.
-
-```blocks3
-start sound (Tennis Hit v)
-switch costume to (costume 2 v)
 +wait (0.3) seconds
-```
-
-## Step 8
-
-Add a `switch costume to`{:class="block3looks"} block set to `costume 1`{:class="block3looks"}.
-
-```blocks3
-switch costume to (costume 2 v)
-wait (0.3) seconds
 +switch costume to (costume 1 v)
 ```
 
 ## Now run your code
 
-Click the **Green Flag**, aim, then click and release the mouse.
-Check that the player swings and the sound plays.
+Click the **Green Flag**. Shoot the puck and check that the player animates.
+
+![The player swings the stick when the mouse is released.](images/step-7.gif){:width="450px"}

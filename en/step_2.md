@@ -1,36 +1,21 @@
-## Freeze the aim
+## Create a puck
 
-Stop the stick turning when the mouse is clicked.
-
-![stick sprite](images/stick-sprite.png)
-
-You're still working on the **stick sprite**.
+Make a puck to shoot.
 
 ## Step 1
 
-Swap the `forever`{:class="block3control"} loop for a `repeat until`{:class="block3control"} loop.
+Hover over the **Choose a Sprite** button and click **Paint**.
 
-```blocks3
-when green flag clicked
-go to x: (-168) y: (-51)
-+repeat until < >
-point towards (mouse-pointer v)
-end
-```
+![The Choose a Sprite menu with Paint selected.](images/sprite-paint.png){:width="250px"}
 
 ## Step 2
 
-Add a `mouse down?`{:class="block3sensing"} block to the loop.
+Draw a puck and resize so that it fits onto the stick
 
-```blocks3
-when green flag clicked
-go to x: (-168) y: (-51)
-repeat until <mouse down?>
-point towards (mouse-pointer v)
-end
-```
+## Step 3
 
-## Now run your code
+Name the sprite `puck` into the **Sprite** name box.
 
-Click the **Green Flag** and move the mouse.
-Click the mouse and check that the stick stops turning.
+![The Sprite name box with puck typed into it.](images/sprite-rename.png){:width="250px"}
+
+![A black circle is painted as a new sprite and the sprite is named puck.](images/step-2.gif){:width="450px"}

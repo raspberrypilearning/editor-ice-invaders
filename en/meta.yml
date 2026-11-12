@@ -1,26 +1,27 @@
 title: Ice invaders
 hero_image: images/banner.png
-description: Aim a hockey stick and fire pucks to stop the ice invaders
+description: Aim a hockey stick and shoot pucks to stop the ice invaders
 listed: false
 pdf: false
 steps:
-  - title: Aim the stick
+  - title: Move the stick
     completion:
       - engaged
-  - title: Freeze the aim
+  - title: Create a puck
   - title: Place the puck
-  - title: Fire the puck
-  - title: Bounce off the walls
-  - title: Stop the shot
-  - title: Swing the stick
-  - title: Make a column of ice
-  - title: Show the ice
-  - title: March the ice
-  - title: Set the ice speed
-  - title: Keep them coming
-  - title: Keep score
+  - title: Shoot the puck
+  - title: Hide the puck
+  - title: Reset the shot
+  - title: Animate player
+  - title: Add swing sound
+  - title: Create the ice
+  - title: Line up the ice
+  - title: Move the ice
+  - title: Hide the sprite
+  - title: Make new lines of ice
   - title: Hit the ice
   - title: Pop!
+  - title: Keep score
   - title: Game over
     completion:
       - internal

@@ -1,62 +1,37 @@
-## Make a column of ice
+## Add swing sound
 
-Make six pieces of ice in a line.
+Play a sound when the player swings.
 
-![ice sprite](images/ice-sprite.png)
+![player sprite](images/player-sprite.png)
 
-> ## Tip
->
-> A **clone** is a copy of a sprite.
+You're still working on the **player sprite**.
 
 ## Step 1
 
-Click on the **ice sprite**.
+Open the **Sounds** tab.
 
-Add blocks to hide the ice and set its starting position.
-
-```blocks3
-when green flag clicked
-hide
-go to x: (139) y: (-120)
-```
+![The Sounds tab.](images/sounds-tab.png){:width="450px"}
 
 ## Step 2
 
-Add an empty `repeat`{:class="block3control"} loop set to `6`.
+Click **Choose a Sound** and pick one that will work for a swing from the library.
 
-```blocks3
-when green flag clicked
-hide
-go to x: (139) y: (-120)
-+repeat (6)
-end
-```
+![Choosing a sound.](images/sounds-choose.png){:width="250px"}
 
 ## Step 3
 
-Add a `create clone of myself`{:class="block3control"} block inside the loop.
+Back in the **Code** tab, add a `start sound`{:class="block3sound"} block and choose your sound.
 
 ```blocks3
-when green flag clicked
-hide
-go to x: (139) y: (-120)
-repeat (6)
-+create clone of (myself v)
-end
+wait until <not <mouse down?>>
++start sound (Tennis Hit v)
+switch costume to (costume 2 v)
+wait (0.3) seconds
+switch costume to (costume 1 v)
 ```
 
-## Step 4
+## Now run your code
 
-Add a `change y by`{:class="block3motion"} block set to `45`.
+Click the **Green Flag**. Shoot the puck and check that your sound plays.
 
-```blocks3
-when green flag clicked
-hide
-go to x: (139) y: (-120)
-repeat (6)
-create clone of (myself v)
-+change y by (45)
-end
-```
-
-The clones appear in the next step.
+![The player swings and a sound plays when the puck is shot.](images/step-8.gif){:width="450px"}

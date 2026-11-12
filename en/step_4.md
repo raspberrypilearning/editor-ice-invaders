@@ -1,4 +1,4 @@
-## Fire the puck
+## Shoot the puck
 
 Send the puck flying when the mouse is released.
 
@@ -10,8 +10,12 @@ You're still working on the **puck sprite**.
 
 Add a `wait until`{:class="block3control"} block with a `not`{:class="block3operators"} block and a `mouse down?`{:class="block3sensing"} block.
 
+This makes the puck wait until the mouse is released.
+
 ```blocks3
 when green flag clicked
+set rotation style [don't rotate v]
+set drag mode [not draggable v]
 repeat until <mouse down?>
 go to (stick v)
 point towards (mouse-pointer v)
@@ -24,8 +28,11 @@ end
 
 Add a `forever`{:class="block3control"} loop with a `move steps`{:class="block3motion"} block inside.
 
+
 ```blocks3
 when green flag clicked
+set rotation style [don't rotate v]
+set drag mode [not draggable v]
 repeat until <mouse down?>
 go to (stick v)
 point towards (mouse-pointer v)
@@ -37,7 +44,34 @@ move (12) steps
 end
 ```
 
+## Step 3
+
+Add an `if on edge, bounce`{:class="block3motion"} block inside the `forever`{:class="block3control"} loop.
+
+```blocks3
+when green flag clicked
+set rotation style [don't rotate v]
+set drag mode [not draggable v]
+repeat until <mouse down?>
+go to (stick v)
+point towards (mouse-pointer v)
+move (130) steps
+end
+wait until <not <mouse down?>>
+forever
+move (12) steps
++if on edge, bounce
+end
+```
+
 ## Now run your code
 
-Click the **Green Flag**, aim, then click and release the mouse.
-Check that the puck flies off in the direction you aimed.
+Click the **Green Flag**, move, then click. Check that the puck flies off in the direction you aimed at.
+
+> ## Tip
+>
+> The puck moves `12` steps each time the loop repeats, so it keeps flying.
+>
+> Experiment with different numbers to make it move faster or slower.
+
+![The puck flies off in the direction aimed when the mouse is released.](images/step-4.gif){:width="450px"}

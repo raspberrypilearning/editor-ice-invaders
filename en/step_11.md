@@ -1,41 +1,25 @@
-## Set the ice speed
+## Move the ice
 
-Store the ice speed in a variable.
+Make the ice move towards the player.
 
 ![ice sprite](images/ice-sprite.png)
-
-> ## Tip
->
-> A **variable** stores a number that can change.
 
 You're still working on the **ice sprite**.
 
 ## Step 1
-
-Make a variable called `ice speed`{:class="block3variables"} for all sprites.
-
-## Step 2
-
-Add a `set ice speed to`{:class="block3variables"} block set to `3` at the top of the green flag script.
-
-```blocks3
-when green flag clicked
-+set [ice speed v] to (3)
-hide
-go to x: (139) y: (-120)
-```
-
-## Step 3
-
-Put the `ice speed`{:class="block3variables"} variable in the `wait`{:class="block3control"} block of the clone script.
+Add a second script that moves each clone left every few seconds.
 
 ```blocks3
 when I start as a clone
 forever
-wait (ice speed) seconds
+wait (3) seconds
 change x by (-50)
 end
 ```
 
-The ice moves at the same speed for now.
-Try a different number in the `set` block to change it.
+## Now run your code
+
+Click the **Green Flag**.
+Check that the ice steps to the left every three seconds.
+
+![The column of ice steps to the left every three seconds.](images/step-11.gif){:width="450px"}

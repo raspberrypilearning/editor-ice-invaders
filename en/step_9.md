@@ -1,19 +1,21 @@
-## Show the ice
+## Create the ice
 
-Make the clones visible.
+Make a block of ice for the puck to pop.
 
-![ice sprite](images/ice-sprite.png)
+## Step 1
 
-You're still working on the **ice sprite**.
+Hover over the **Choose a Sprite** button and click **Paint**.
 
-Add a new script that shows each clone when it starts.
+![The Choose a Sprite menu with Paint selected.](images/sprite-paint.png){:width="250px"}
 
-```blocks3
-when I start as a clone
-show
-```
+## Step 2
 
-## Now run your code
+Draw a block of ice and position it in the centre of paint window.
 
-Click the **Green Flag**.
-Check that a column of six pieces of ice appears.
+## Step 3
+
+Name the sprite `ice` in the **Sprite** name box.
+
+![The Sprite name box with ice typed into it.](images/sprite-rename.png){:width="250px"}
+
+![A block of ice is painted as a new sprite and the sprite is named ice.](images/step-9.gif){:width="450px"}
