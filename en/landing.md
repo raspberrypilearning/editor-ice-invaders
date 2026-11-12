@@ -1,15 +1,15 @@
 ## What you will make
 
-Make an ice invaders game!
+Make a hockey shoot out game!
 
-Aim your hockey stick and fire the puck to pop the ice before it reaches the player.
+Aim your stick and shoot the puck to pop blocks of ice. Don't let the ice get close!
 
-Click the **Green Flag** to play:
+Try it out, click the **Green Flag** to play.
 
 --- no-print ---
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/PROJECT_ID/?autostart=false" frameborder="0" scrolling="no"></iframe>
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1439375444/?autostart=false" frameborder="0" scrolling="no"></iframe>
 </div>
 
 --- /no-print ---
