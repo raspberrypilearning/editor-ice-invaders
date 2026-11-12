@@ -1,14 +1,30 @@
 title: Ice invaders
 hero_image: images/banner.png
-description: A short description of the project
+description: Aim a hockey stick and fire pucks to stop the ice invaders
 listed: false
 pdf: false
 steps:
-  - title: What you will make
-  - title: Step title
+  - title: Aim the stick
     completion:
-      - engaged      
-  - title: Challenge
+      - engaged
+  - title: Freeze the aim
+  - title: Place the puck
+  - title: Fire the puck
+  - title: Bounce off the walls
+  - title: Stop the shot
+  - title: Swing the stick
+  - title: Make a column of ice
+  - title: Show the ice
+  - title: March the ice
+  - title: Set the ice speed
+  - title: Keep them coming
+  - title: Keep score
+  - title: Hit the ice
+  - title: Pop!
+  - title: Game over
+    completion:
+      - internal
+  - title: Make it your own
     challenge: true
     completion:
       - external
