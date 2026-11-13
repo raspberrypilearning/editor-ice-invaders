@@ -12,9 +12,9 @@ The waiting time is needed in two places now, so store it in a variable.
 
 Make a variable called `ice speed`{:class="block3variables"} for all sprites.
 
-### Tip
-
-A **variable** stores a number that can change.
+> [!TIP]
+>
+> A **variable** stores a number that can change.
 
 ## Step 2
 
