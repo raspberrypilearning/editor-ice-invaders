@@ -1,6 +1,6 @@
 ## Keep score
 
-Count the ice that gets hit.
+Count the ice blocks that get hit.
 
 ![ice sprite](images/ice-sprite.png)
 
@@ -9,6 +9,8 @@ You're still working on the **ice sprite**.
 ## Step 1
 
 Make a variable called `score`{:class="block3variables"} for all sprites.
+
+![The Make a Variable button in Scratch.](images/make-a-variable.png){:width="250px"}
 
 ## Step 2
 

@@ -11,7 +11,6 @@ steps:
   - title: Place the puck
   - title: Shoot the puck
   - title: Hide the puck
-  - title: Reset the shot
   - title: Animate player
   - title: Add swing sound
   - title: Create the ice
@@ -20,12 +19,13 @@ steps:
   - title: Hide the sprite
   - title: Make new lines of ice
   - title: Hit the ice
-  - title: Pop!
+  - title: Add a sound
+  - title: Burst effect
   - title: Keep score
   - title: Game over
     completion:
       - internal
-  - title: Make it your own
+  - title: Challenges
     challenge: true
     completion:
       - external

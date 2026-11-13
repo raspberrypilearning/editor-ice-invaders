@@ -25,16 +25,7 @@ end
 
 Drag the `move`{:class="block3motion"} and `if on edge`{:class="block3motion"} blocks inside the `if`{:class="block3control"} part.
 
-```blocks3
-wait until <not <mouse down?>>
-forever
-if < > then
-+move (12) steps
-+if on edge, bounce
-else
-end
-end
-```
+![Dragging the move and if on edge blocks inside the if part.](images/step-5-drag.gif){:width="450px"}
 
 ## Step 3
 
@@ -57,7 +48,18 @@ end
 
 Add a `hide`{:class="block3looks"} block to the `else`{:class="block3control"} part.
 
+Then add a `broadcast`{:class="block3events"} block under it, and choose `reset`{:class="block3events"} from the drop-down.
+
+Add a `show`{:class="block3looks"} block to the top of the script, so the puck comes back for the next shot.
+
 ```blocks3
+when I receive (reset v)
++show
+repeat until <mouse down?>
+go to (stick v)
+point towards (mouse-pointer v)
+move (130) steps
+end
 wait until <not <mouse down?>>
 forever
 if <(timer) < (1)> then
@@ -65,6 +67,7 @@ move (12) steps
 if on edge, bounce
 else
 +hide
++broadcast (reset v)
 end
 end
 ```
@@ -74,14 +77,6 @@ end
 Add a `reset timer`{:class="block3sensing"} block before the `forever`{:class="block3control"} loop.
 
 ```blocks3
-when green flag clicked
-set rotation style [don't rotate v]
-set drag mode [not draggable v]
-repeat until <mouse down?>
-go to (stick v)
-point towards (mouse-pointer v)
-move (130) steps
-end
 wait until <not <mouse down?>>
 +reset timer
 forever
@@ -101,6 +96,6 @@ Check that the puck hides after one second.
 
 > [!TIP]
 >
-> Change the number in the `less than` block to make the puck stop sooner or later.
+> Change the number next to `timer` to make the puck stop sooner or later.
 
 ![The puck hides one second after it is shot.](images/step-5.gif){:width="450px"}

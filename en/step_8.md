@@ -1,37 +1,21 @@
-## Add swing sound
+## Create the ice
 
-Play a sound when the player swings.
-
-![player sprite](images/player-sprite.png)
-
-You're still working on the **player sprite**.
+Make a block of ice for the puck to pop.
 
 ## Step 1
 
-Open the **Sounds** tab.
+Hover over the **Choose a Sprite** button and click **Paint**.
 
-![The Sounds tab.](images/sounds-tab.png){:width="450px"}
+![The Choose a Sprite menu with Paint selected.](images/sprite-paint.png){:width="250px"}
 
 ## Step 2
 
-Click **Choose a Sound** and pick one that will work for a swing from the library.
-
-![Choosing a sound.](images/sounds-choose.png){:width="250px"}
+Draw a block of ice and position it in the centre of paint window.
 
 ## Step 3
 
-Back in the **Code** tab, add a `start sound`{:class="block3sound"} block and choose your sound.
+Name the sprite **ice** in the **Sprite** name box.
 
-```blocks3
-wait until <not <mouse down?>>
-+start sound (Tennis Hit v)
-switch costume to (costume 2 v)
-wait (0.3) seconds
-switch costume to (costume 1 v)
-```
+![The Sprite name box with ice typed into it.](images/sprite-rename.png){:width="250px"}
 
-## Now run your code
-
-Click the **Green Flag**. Shoot the puck and check that your sound plays.
-
-![The player swings and a sound plays when the puck is shot.](images/step-8.gif){:width="450px"}
+![A block of ice is painted as a new sprite and the sprite is named ice.](images/step-8.gif){:width="450px"}

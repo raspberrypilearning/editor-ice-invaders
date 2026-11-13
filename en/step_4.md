@@ -13,7 +13,7 @@ Add a `wait until`{:class="block3control"} block with a `not`{:class="block3oper
 This makes the puck wait until the mouse is released.
 
 ```blocks3
-when green flag clicked
+when I receive (reset v)
 set rotation style [don't rotate v]
 set drag mode [not draggable v]
 repeat until <mouse down?>

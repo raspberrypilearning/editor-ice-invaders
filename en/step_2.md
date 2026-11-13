@@ -14,7 +14,7 @@ Draw a puck and resize so that it fits onto the stick
 
 ## Step 3
 
-Name the sprite `puck` into the **Sprite** name box.
+Name the sprite **puck** into the **Sprite** name box.
 
 ![The Sprite name box with puck typed into it.](images/sprite-rename.png){:width="250px"}
 

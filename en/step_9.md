@@ -1,21 +1,56 @@
-## Create the ice
+## Line up the ice
 
-Make a block of ice for the puck to pop.
+Repeat six blocks of ice in a line.
+
+![ice sprite](images/ice-sprite.png)
 
 ## Step 1
 
-Hover over the **Choose a Sprite** button and click **Paint**.
+Click on the **ice sprite**.
 
-![The Choose a Sprite menu with Paint selected.](images/sprite-paint.png){:width="250px"}
+Add a green flag and set its `x` and `y` starting positions.
+
+```blocks3
+when green flag clicked
+go to x: (139) y: (-120)
+```
 
 ## Step 2
 
-Draw a block of ice and position it in the centre of paint window.
+Add a `create clone of myself`{:class="block3control"} block and a `change y by`{:class="block3motion"} block set to `45`.
+
+You may need to play with the number to suit your sprite.
+
+```blocks3
+when green flag clicked
+go to x: (139) y: (-120)
++create clone of (myself v)
++change y by (45)
+```
+
+> [!TIP]
+>
+> A **clone** is a copy of a sprite.
 
 ## Step 3
 
-Name the sprite `ice` in the **Sprite** name box.
+Put the two blocks inside a `repeat`{:class="block3control"} loop set to `6`.
 
-![The Sprite name box with ice typed into it.](images/sprite-rename.png){:width="250px"}
+```blocks3
+when green flag clicked
+go to x: (139) y: (-120)
++repeat (6)
+create clone of (myself v)
+change y by (45)
+end
+```
 
-![A block of ice is painted as a new sprite and the sprite is named ice.](images/step-9.gif){:width="450px"}
+> [!TIP]
+>
+> Experiment with the number in the `repeat`{:class="block3control"} loop to make a longer or shorter line of ice.
+
+## Now run your code
+
+Click the **Green Flag**. Check that a line of six blocks of ice appears.
+
+![The blocks that make a column of six clones of the ice sprite.](images/step-9.gif){:width="450px"}

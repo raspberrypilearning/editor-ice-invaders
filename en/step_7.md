@@ -1,65 +1,37 @@
-## Animate player
+## Add swing sound
 
-Make the player swing their arm when the puck is shot.
+Play a sound when the player swings.
 
 ![player sprite](images/player-sprite.png)
 
-Click on the **player sprite**.
-
 ## Step 1
 
-Add a `repeat until`{:class="block3control"} loop, with a `mouse down?`{:class="block3sensing"} block.
+Click on the **player sprite**.
 
-```blocks3
-when I receive (reset v)
-go to x: (-159) y: (-58)
-set drag mode [not draggable v]
-+ repeat until <mouse down?>
-end
-```
+Open the **Sounds** tab.
+
+![The Sounds tab.](images/sounds-tab.png){:width="450px"}
 
 ## Step 2
 
-Add a `switch costume`{:class="block3looks"} block and set to `costume 1`{:class="block3looks"}.
+Click **Choose a Sound** and pick one that will work for a swing from the library.
 
-```blocks3
-when I receive (reset v)
-go to x: (-159) y: (-58)
-set drag mode [not draggable v]
-repeat until <mouse down?>
-switch costume to (costume 1 v)
-end
-```
+![Choosing a sound.](images/sounds-choose.png){:width="250px"}
 
 ## Step 3
 
-Add a `wait until`{:class="block3control"} block with `not mouse down?`{:class="block3sensing"} after the loop.
-
-```blocks3
-when I receive (reset v)
-go to x: (-159) y: (-58)
-set drag mode [not draggable v]
-repeat until <mouse down?>
-switch costume to (costume 1 v)
-end
-+wait until <not <mouse down?>>
-```
-
-## Step 4
-
-Add another `switch costume to`{:class="block3looks"} block, but set to `costume 2`{:class="block3looks"}. 
-
-Then add a `wait`{:class="block3control"} and  `switch costume`{:class="block3looks"} back.
+Back in the **Code** tab, add a `start sound`{:class="block3sound"} block and choose your sound.
 
 ```blocks3
 wait until <not <mouse down?>>
-+switch costume to (costume 2 v)
-+wait (0.3) seconds
-+switch costume to (costume 1 v)
++start sound (Tennis Hit v)
+switch costume to (costume 2 v)
+wait (0.3) seconds
+switch costume to (costume 1 v)
 ```
 
 ## Now run your code
 
-Click the **Green Flag**. Shoot the puck and check that the player animates.
+Click the **Green Flag**. Shoot the puck and check that your sound plays.
 
-![The player swings the stick when the mouse is released.](images/step-7.gif){:width="450px"}
+![The player swings and a sound plays when the puck is shot.](images/step-7.gif){:width="450px"}

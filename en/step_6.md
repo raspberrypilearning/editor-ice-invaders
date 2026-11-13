@@ -1,67 +1,65 @@
-## Reset the shot
+## Animate player
 
-Send the puck back to the blade after each shot.
+Make the player swing their arm when the puck is shot.
 
-![puck sprite](images/puck-sprite.png)
+![player sprite](images/player-sprite.png)
 
-You're still working on the **puck sprite**.
+Click on the **player sprite**.
 
 ## Step 1
 
-Add a `broadcast`{:class="block3events"} block under the `hide`{:class="block3looks"} block.
-
-```blocks3
-forever
-if <(timer) < (1)> then
-move (12) steps
-if on edge, bounce
-else
-hide
-+broadcast (reset v)
-end
-end
-```
-
-Click the drop-down and choose `reset`.
-
-## Step 2
-
-Add a `when I receive`{:class="block3events"} block set to `reset` to an empty part of the code area, and add a `show`{:class="block3looks"} block under it.
+Add a `repeat until`{:class="block3control"} loop, with a `mouse down?`{:class="block3sensing"} block.
 
 ```blocks3
 when I receive (reset v)
-show
+go to x: (-159) y: (-58)
+set drag mode [not draggable v]
++ repeat until <mouse down?>
+end
+```
+
+## Step 2
+
+Add a `switch costume`{:class="block3looks"} block and set to `costume 1`{:class="block3looks"}.
+
+```blocks3
+when I receive (reset v)
+go to x: (-159) y: (-58)
+set drag mode [not draggable v]
+repeat until <mouse down?>
+switch costume to (costume 1 v)
+end
 ```
 
 ## Step 3
 
-Drag the blocks from under `set rotation style`{:class="block3motion"} to the `when I receive`{:class="block3events"} block.
+Add a `wait until`{:class="block3control"} block with `not mouse down?`{:class="block3sensing"} after the loop.
 
 ```blocks3
 when I receive (reset v)
-show
-+repeat until <mouse down?>
-go to (stick v)
-point towards (mouse-pointer v)
-move (130) steps
+go to x: (-159) y: (-58)
+set drag mode [not draggable v]
+repeat until <mouse down?>
+switch costume to (costume 1 v)
 end
 +wait until <not <mouse down?>>
-+reset timer
-+forever
-if <(timer) < (1)> then
-move (12) steps
-if on edge, bounce
-else
-hide
-broadcast (reset v)
-end
-end
 ```
 
-![Dragging the blocks onto the when I receive reset block.](images/move-blocks.gif){:width="450px"}
+## Step 4
+
+Add another `switch costume to`{:class="block3looks"} block, but set to `costume 2`{:class="block3looks"}. 
+
+Then add a `wait`{:class="block3control"} and  `switch costume`{:class="block3looks"} back.
+
+```blocks3
+wait until <not <mouse down?>>
++switch costume to (costume 2 v)
++wait (0.3) seconds
++switch costume to (costume 1 v)
+```
 
 ## Now run your code
 
-Click the **Green Flag**. Shoot the puck and check that it comes back to the blade for another shot.
+Click the **Green Flag**. Shoot the puck and check that the player animates.
 
-![The puck returns to the stick after each shot.](images/step-6.gif){:width="450px"}
+![The player swings the stick when the mouse is released.](images/step-6.gif){:width="450px"}

@@ -1,25 +1,43 @@
-## Move the ice
+## Hide the sprite
 
-Make the ice move towards the player.
+The original ice block does not move. Hide this so only clones are visible.
 
 ![ice sprite](images/ice-sprite.png)
 
 You're still working on the **ice sprite**.
 
 ## Step 1
-Add a second script that moves each clone left every few seconds.
+
+Add a `hide`{:class="block3looks"} block under `go to x: y: `{:class="block3motion"}.
+
+```blocks3
+when green flag clicked
+set [ice speed v] to (3)
+go to x: (139) y: (-120)
++hide
+repeat (6)
+create clone of (myself v)
+change y by (45)
+end
+```
+
+## Step 2
+
+Add a `show`{:class="block3looks"} block under `when I start as a clone`{:class="block3control"}.
+
+Each clone shows itself as it is made.
 
 ```blocks3
 when I start as a clone
++show
 forever
-wait (3) seconds
+wait (ice speed) seconds
 change x by (-50)
 end
 ```
 
 ## Now run your code
 
-Click the **Green Flag**.
-Check that the ice steps to the left every three seconds.
+Click the **Green Flag**. Check that six blocks of ice move across the stage, with nothing left behind.
 
-![The column of ice steps to the left every three seconds.](images/step-11.gif){:width="450px"}
+![The original sprite hides and the clones move across the stage.](images/step-11.gif){:width="450px"}
