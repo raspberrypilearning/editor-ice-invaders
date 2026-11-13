@@ -99,8 +99,8 @@ end
 Click the **Green Flag** and shoot the puck.
 Check that the puck hides after one second.
 
-> ## Tip
->
-> Change the number in the `less than` block to make the puck stop sooner or later.
+### Tip
+
+Change the number in the `less than` block to make the puck stop sooner or later.
 
 ![The puck hides one second after it is shot.](images/step-5.gif){:width="450px"}

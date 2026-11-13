@@ -28,9 +28,9 @@ go to x: (139) y: (-120)
 +change y by (45)
 ```
 
-> ## Tip
->
-> A **clone** is a copy of a sprite.
+### Tip
+
+A **clone** is a copy of a sprite.
 
 ## Step 3
 
@@ -45,9 +45,9 @@ change y by (45)
 end
 ```
 
-> ## Tip
->
-> Experiment with the number in the `repeat`{:class="block3control"} loop to make a longer or shorter line of ice.
+### Tip
+
+Experiment with the number in the `repeat`{:class="block3control"} loop to make a longer or shorter line of ice.
 
 ## Now run your code
 

@@ -1,6 +1,6 @@
 ## Create a puck
 
-Make a puck to shoot.
+Draw a hockey puck with the paint tools.
 
 ## Step 1
 

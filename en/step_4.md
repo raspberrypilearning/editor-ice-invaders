@@ -30,14 +30,6 @@ Add a `forever`{:class="block3control"} loop with a `move steps`{:class="block3m
 
 
 ```blocks3
-when green flag clicked
-set rotation style [don't rotate v]
-set drag mode [not draggable v]
-repeat until <mouse down?>
-go to (stick v)
-point towards (mouse-pointer v)
-move (130) steps
-end
 wait until <not <mouse down?>>
 +forever
 move (12) steps
@@ -49,14 +41,6 @@ end
 Add an `if on edge, bounce`{:class="block3motion"} block inside the `forever`{:class="block3control"} loop.
 
 ```blocks3
-when green flag clicked
-set rotation style [don't rotate v]
-set drag mode [not draggable v]
-repeat until <mouse down?>
-go to (stick v)
-point towards (mouse-pointer v)
-move (130) steps
-end
 wait until <not <mouse down?>>
 forever
 move (12) steps
@@ -68,10 +52,10 @@ end
 
 Click the **Green Flag**, move, then click. Check that the puck flies off in the direction you aimed at.
 
-> ## Tip
->
-> The puck moves `12` steps each time the loop repeats, so it keeps flying.
->
-> Experiment with different numbers to make it move faster or slower.
+### Tip
+
+The puck moves `12` steps each time the loop repeats, so it keeps flying.
+
+Experiment with different numbers to make it move faster or slower.
 
 ![The puck flies off in the direction aimed when the mouse is released.](images/step-4.gif){:width="450px"}
