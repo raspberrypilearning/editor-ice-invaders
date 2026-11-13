@@ -1,43 +1,56 @@
-## Hide the sprite
+## Line up the ice
 
-The original ice block does not move. Hide this so only clones are visible.
+Repeat six blocks of ice in a line.
 
 ![ice sprite](images/ice-sprite.png){:width="150px"}
 
-You're still working on the **ice sprite**.
-
 ## Step 1
 
-Add a `hide`{:class="block3looks"} block under `go to x: y: `{:class="block3motion"}.
+Click on the **ice sprite**.
+
+Add a green flag and set its `x` and `y` starting positions.
 
 ```blocks3
 when green flag clicked
-set [ice speed v] to (3)
 go to x: (139) y: (-120)
-+hide
-repeat (6)
+```
+
+## Step 2
+
+Add a `create clone of myself`{:class="block3control"} block and a `change y by`{:class="block3motion"} block set to `45`.
+
+You may need to play with the number to suit your sprite.
+
+```blocks3
+when green flag clicked
+go to x: (139) y: (-120)
++create clone of (myself v)
++change y by (45)
+```
+
+> [!TIP]
+>
+> A **clone** is a copy of a sprite.
+
+## Step 3
+
+Put the two blocks inside a `repeat`{:class="block3control"} loop set to `6`.
+
+```blocks3
+when green flag clicked
+go to x: (139) y: (-120)
++repeat (6)
 create clone of (myself v)
 change y by (45)
 end
 ```
 
-## Step 2
-
-Add a `show`{:class="block3looks"} block under `when I start as a clone`{:class="block3control"}.
-
-Each clone shows itself as it is made.
-
-```blocks3
-when I start as a clone
-+show
-forever
-wait (ice speed) seconds
-change x by (-50)
-end
-```
+> [!TIP]
+>
+> Experiment with the number in the `repeat`{:class="block3control"} loop to make a longer or shorter line of ice.
 
 ## Now run your code
 
-Click the **Green Flag**. Check that six blocks of ice move across the stage, with nothing left behind.
+Click the **Green Flag**. Check that a line of six blocks of ice appears.
 
-![The original sprite hides and the clones move across the stage.](images/step-11.gif){:width="450px"}
+![The blocks that make a column of six clones of the ice sprite.](images/step-11.gif){:width="450px"}

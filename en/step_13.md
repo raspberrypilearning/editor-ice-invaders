@@ -1,6 +1,6 @@
-## Hit the ice
+## Hide the sprite
 
-Make a block of ice disappear when the puck hits it.
+The original ice block does not move. Hide this so only clones are visible.
 
 ![ice sprite](images/ice-sprite.png){:width="150px"}
 
@@ -8,28 +8,36 @@ You're still working on the **ice sprite**.
 
 ## Step 1
 
-Add a `wait until`{:class="block3control"} block to the `show` script, with a `touching`{:class="block3sensing"} block set to **puck** inside it.
+Add a `hide`{:class="block3looks"} block under `go to x: y: `{:class="block3motion"}.
 
 ```blocks3
-when I start as a clone
-show
-+wait until <touching (puck v)?>
+when green flag clicked
+set [ice speed v] to (3)
+go to x: (139) y: (-120)
++hide
+repeat (6)
+create clone of (myself v)
+change y by (45)
+end
 ```
 
 ## Step 2
 
-Add a `delete this clone`{:class="block3control"} block.
+Add a `show`{:class="block3looks"} block under `when I start as a clone`{:class="block3control"}.
+
+Each clone shows itself as it is made.
 
 ```blocks3
 when I start as a clone
-show
-wait until <touching (puck v)?>
-+delete this clone
++show
+forever
+wait (ice speed) seconds
+change x by (-50)
+end
 ```
 
 ## Now run your code
 
-Click the **Green Flag** and shoot the puck at the ice.
-Check that the block of ice disappears when the puck hits it.
+Click the **Green Flag**. Check that six blocks of ice move across the stage, with nothing left behind.
 
-![A block of ice disappears when the puck hits it.](images/step-13.gif){:width="450px"}
+![The original sprite hides and the clones move across the stage.](images/step-13.gif){:width="450px"}

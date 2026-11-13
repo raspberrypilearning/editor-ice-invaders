@@ -9,8 +9,10 @@ steps:
       - engaged
   - title: Create a puck
   - title: Place the puck
+  - title: Move the puck
   - title: Shoot the puck
-  - title: Hide the puck
+  - title: Stop the puck
+  - title: Reload the puck
   - title: Animate player
   - title: Add swing sound
   - title: Create the ice

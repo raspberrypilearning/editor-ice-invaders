@@ -1,65 +1,57 @@
-## Animate player
+## Stop the puck
 
-Make the player swing their arm when the puck is shot.
+Stop the puck one second after it is shot.
 
-![player sprite](images/player-sprite.png){:width="150px"}
+![puck sprite](images/puck-sprite.png){:width="150px"}
 
-Click on the **player sprite**.
+You're still working on the **puck sprite**.
 
 ## Step 1
 
-Add a `repeat until`{:class="block3control"} loop, with a `mouse down?`{:class="block3sensing"} block.
+Add an empty `if else`{:class="block3control"} block inside the loop, then drag the `move`{:class="block3motion"} and `if on edge`{:class="block3motion"} blocks inside the `if`{:class="block3control"} part.
 
-```blocks3
-when I receive (reset v)
-go to x: (-159) y: (-58)
-set drag mode [not draggable v]
-+ repeat until <mouse down?>
-end
-```
+![Adding an if else block, then dragging the move and if on edge blocks inside the if part.](images/step-6-if.gif){:width="450px"}
 
 ## Step 2
 
-Add a `switch costume`{:class="block3looks"} block and set to `costume 1`{:class="block3looks"}.
+Add a `less than`{:class="block3operators"} block and a `timer`{:class="block3sensing"} block to the `if`{:class="block3control"}.
+
+Type `1` into the second box.
 
 ```blocks3
-when I receive (reset v)
-go to x: (-159) y: (-58)
-set drag mode [not draggable v]
-repeat until <mouse down?>
-switch costume to (costume 1 v)
+wait until <not <mouse down?>>
+forever
++if <(timer) < (1)> then
+move (12) steps
+if on edge, bounce
+else
+end
 end
 ```
 
 ## Step 3
 
-Add a `wait until`{:class="block3control"} block with `not mouse down?`{:class="block3sensing"} after the loop.
-
-```blocks3
-when I receive (reset v)
-go to x: (-159) y: (-58)
-set drag mode [not draggable v]
-repeat until <mouse down?>
-switch costume to (costume 1 v)
-end
-+wait until <not <mouse down?>>
-```
-
-## Step 4
-
-Add another `switch costume to`{:class="block3looks"} block, but set to `costume 2`{:class="block3looks"}. 
-
-Then add a `wait`{:class="block3control"} and  `switch costume`{:class="block3looks"} back.
+Add a `reset timer`{:class="block3sensing"} block before the `forever`{:class="block3control"} loop.
 
 ```blocks3
 wait until <not <mouse down?>>
-+switch costume to (costume 2 v)
-+wait (0.3) seconds
-+switch costume to (costume 1 v)
++reset timer
+forever
+if <(timer) < (1)> then
+move (12) steps
+if on edge, bounce
+else
+end
+end
 ```
 
 ## Now run your code
 
-Click the **Green Flag**. Shoot the puck and check that the player animates.
+Click the **Green Flag** and shoot the puck.
+Check that the puck stops one second after it is shot.
 
-![The player swings the stick when the mouse is released.](images/step-6.gif){:width="450px"}
+> [!TIP]
+>
+> Change the number next to `timer`{:class="block3sensing"} to make the puck stop sooner or later.
+
+![The puck stops one second after it is shot.](images/step-6.gif){:width="450px"}

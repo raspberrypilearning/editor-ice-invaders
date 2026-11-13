@@ -1,74 +1,50 @@
-## Game over
+## Burst effect
 
-End the game when the ice reaches the player.
+Make the ice burst as it disappears.
+
+![ice sprite](images/ice-sprite.png){:width="150px"}
+
+You're still working on the **ice sprite**.
 
 ## Step 1
 
-Click on the **player sprite**.
+Add a `change effect by`{:class="block3looks"} block set to `fisheye` and `200` under the `start sound`{:class="block3sound"} block.
 
-![player sprite](images/player-sprite.png){:width="150px"}
+```blocks3
+when I start as a clone
+show
+wait until <touching (puck v)?>
+start sound (pop v)
++change [fisheye v] effect by (200)
+delete this clone
+```
 
 ## Step 2
 
-Add a new script with an empty `wait until`{:class="block3control"} block.
+Add a `change size by`{:class="block3looks"} block set to `20`.
 
 ```blocks3
-when green flag clicked
-wait until < >
+wait until <touching (puck v)?>
+start sound (pop v)
+change [fisheye v] effect by (200)
++change size by (20)
+delete this clone
 ```
 
 ## Step 3
 
-Add a `touching`{:class="block3sensing"} block set to **ice**.
+Add a `wait`{:class="block3control"} block set to `0.05` seconds, so the burst can be seen.
 
 ```blocks3
-when green flag clicked
-wait until <touching (ice v)?>
-```
-
-## Step 4
-
-Add a `stop other scripts in sprite`{:class="block3control"} block.
-
-```blocks3
-when green flag clicked
-wait until <touching (ice v)?>
-+stop [other scripts in sprite v]
-```
-
-## Step 5
-
-Add a `wait`{:class="block3control"} block set to `0.1` seconds and a `switch costume to`{:class="block3looks"} block set to `costume 3`{:class="block3looks"}.
-
-```blocks3
-stop [other scripts in sprite v]
-+wait (0.1) seconds
-+switch costume to (costume 3 v)
-```
-
-## Step 6
-
-Add a `play sound until done`{:class="block3sound"} block set to `Alien Creak2`{:class="block3sound"}.
-
-```blocks3
-wait (0.1) seconds
-switch costume to (costume 3 v)
-+play sound (Alien Creak2 v) until done
-```
-
-## Step 7
-
-Add a `stop all`{:class="block3control"} block.
-
-```blocks3
-switch costume to (costume 3 v)
-play sound (Alien Creak2 v) until done
-+stop [all v]
+change [fisheye v] effect by (200)
+change size by (20)
++wait (0.05) seconds
+delete this clone
 ```
 
 ## Now run your code
 
-Click the **Green Flag** and let the ice reach the player.
-Check that the player changes costume, a sound plays, and the game stops.
+Click the **Green Flag** and shoot the puck at the ice.
+Check that the ice swells and bursts before it disappears.
 
-![The player changes costume and the game stops when the ice reaches it.](images/step-17.gif){:width="450px"}
+![The ice swells and bursts when the puck hits it.](images/step-17.gif){:width="450px"}

@@ -4,16 +4,16 @@ Position the puck before you shoot.
 
 ![puck sprite](images/puck-sprite.png){:width="150px"}
 
+You're still working on the **puck sprite**.
+
 ## Step 1
 
-Click on the **puck sprite**.
-
-Add a `when I receive`{:class="block3events"} block set to `reset`{:class="block3events"}.
+Add a `when I receive`{:class="block3events"} block.
 
 Then add a `repeat until`{:class="block3control"} loop with a `mouse down?`{:class="block3sensing"} block.
 
 ```blocks3
-when I receive (reset v)
+when I receive [reset v]
 repeat until <mouse down?>
 end
 ```
@@ -23,48 +23,21 @@ end
 Add a `go to`{:class="block3motion"} stick block and a `point towards`{:class="block3motion"} the mouse block inside the loop.
 
 ```blocks3
-when I receive (reset v)
+when I receive [reset v]
 repeat until <mouse down?>
 + go to (stick v)
 + point towards (mouse-pointer v)
 end
 ```
 
-**Test:** the puck follows the stick and points towards the mouse, but it is in the wrong place.
+> [!TIP]
+> **stick** only appears in the `go to`{:class="block3motion"} drop-down once you click it open.
 
-## Step 3
-
-`Move`{:class="block3motion"} the puck `130` steps to position it on the blade of the stick.
-
-```blocks3
-when I receive (reset v)
-repeat until <mouse down?>
-go to (stick v)
-point towards (mouse-pointer v)
-+ move (130) steps
-end
-```
-
-## Step 4
-
-Stop the puck from turning by adding a `set rotation style`{:class="block3motion"} block set to `don't rotate`.
-
-Then add a `set drag mode`{:class="block3sensing"} block set to `not draggable`.
-
-```blocks3
-when I receive (reset v)
-+ set rotation style [don't rotate v]
-+ set drag mode [not draggable v]
-repeat until <mouse down?>
-go to (stick v)
-point towards (mouse-pointer v)
-move (130) steps
-end
-```
+![The go to block drop-down with stick in the list.](images/goto-stick.png){:width="250px"}
 
 ## Now run your code
 
 Click the **Green Flag** and move the mouse.
-Check that the puck moves with the stick as it turns.
+Check that the puck follows the stick, but it is in the wrong place.
 
-![The puck sits on the blade of the stick and moves with it as the mouse moves.](images/step-3.gif){:width="450px"}
+![The puck follows the stick but sits in the wrong place.](images/step-3.gif){:width="450px"}

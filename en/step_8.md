@@ -1,27 +1,65 @@
-## Create the ice
+## Animate player
 
-Make a block of ice for the puck to pop.
+Make the player swing their arm when the puck is shot.
+
+![player sprite](images/player-sprite.png){:width="150px"}
+
+Click on the **player sprite**.
 
 ## Step 1
 
-Hover over the **Choose a Sprite** button and click **Paint**.
+Add a `repeat until`{:class="block3control"} loop, with a `mouse down?`{:class="block3sensing"} block.
 
-![The Choose a Sprite menu with Paint selected.](images/sprite-paint.png){:width="250px"}
+```blocks3
+when I receive [reset v]
+go to x: (-159) y: (-58)
+set drag mode [not draggable v]
++ repeat until <mouse down?>
+end
+```
 
 ## Step 2
 
-Draw a block of ice and position it in the centre of paint window.
+Add a `switch costume`{:class="block3looks"} block and set to `costume1`{:class="block3looks"}.
+
+```blocks3
+when I receive [reset v]
+go to x: (-159) y: (-58)
+set drag mode [not draggable v]
+repeat until <mouse down?>
+switch costume to (costume1 v)
+end
+```
 
 ## Step 3
 
-Name the sprite **ice** in the **Sprite** name box.
+Add a `wait until`{:class="block3control"} block with `not mouse down?`{:class="block3sensing"} after the loop.
 
-![The Sprite name box with ice typed into it.](images/ice-name.png){:width="250px"}
+```blocks3
+when I receive [reset v]
+go to x: (-159) y: (-58)
+set drag mode [not draggable v]
+repeat until <mouse down?>
+switch costume to (costume1 v)
+end
++wait until <not <mouse down?>>
+```
 
 ## Step 4
 
-Change the number in the **Size** box until the block of ice is bigger than the puck.
+Add another `switch costume to`{:class="block3looks"} block, but set to `costume2`{:class="block3looks"}. 
 
-![The Size box in the sprite panel.](images/ice-size.png){:width="250px"}
+Then add a `wait`{:class="block3control"} and  `switch costume`{:class="block3looks"} back.
 
-![A block of ice is painted as a new sprite and the sprite is named ice.](images/step-8.gif){:width="450px"}
+```blocks3
+wait until <not <mouse down?>>
++switch costume to (costume2 v)
++wait (0.3) seconds
++switch costume to (costume1 v)
+```
+
+## Now run your code
+
+Click the **Green Flag**. Shoot the puck and check that the player animates.
+
+![The player swings the stick when the mouse is released.](images/step-8.gif){:width="450px"}

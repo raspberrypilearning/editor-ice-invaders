@@ -1,48 +1,27 @@
-## Move the ice
+## Create the ice
 
-Make the ice move towards the player.
+Make a block of ice for the puck to pop.
 
 ## Step 1
 
-Click on the **ice sprite**.
+Hover over the **Choose a Sprite** button and click **Paint**.
 
-![ice sprite](images/ice-sprite.png){:width="150px"}
+![The Choose a Sprite menu with Paint selected.](images/sprite-paint.png){:width="250px"}
 
 ## Step 2
 
-Make a variable called `ice speed`{:class="block3variables"} for all sprites.
-
-![The Make a Variable button in Scratch.](images/make-a-variable.png){:width="250px"}
+Draw a block of ice and position it in the centre of paint window.
 
 ## Step 3
 
-Add a `set ice speed to`{:class="block3variables"} block set to `3` at the top of the green flag script.
+Name the sprite **ice** in the **Sprite** name box.
 
-```blocks3
-when green flag clicked
-+set [ice speed v] to (3)
-go to x: (139) y: (-120)
-repeat (6)
-create clone of (myself v)
-change y by (45)
-end
-```
+![The Sprite name box with ice typed into it.](images/ice-name.png){:width="250px"}
 
 ## Step 4
 
-Add a second `when I start as a clone`{:class="block3control"} block that moves the ice left after `ice speed`{:class="block3variables"} seconds.
+Change the number in the **Size** box until the block of ice is bigger than the puck.
 
-```blocks3
-when I start as a clone
-forever
-wait (ice speed) seconds
-change x by (-50)
-end
-```
+![The Size box in the sprite panel.](images/ice-size.png){:width="250px"}
 
-## Now run your code
-
-Click the **Green Flag**.
-Check that the ice steps to the left every three seconds.
-
-![The column of ice steps to the left every three seconds.](images/step-10.gif){:width="450px"}
+![A block of ice is painted as a new sprite and the sprite is named ice.](images/step-10.gif){:width="450px"}

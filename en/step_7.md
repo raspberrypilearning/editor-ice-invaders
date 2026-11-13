@@ -1,37 +1,49 @@
-## Add swing sound
+## Reload the puck
 
-Play a sound when the player swings.
+Bring the puck back to the stick for the next shot.
 
-![player sprite](images/player-sprite.png){:width="150px"}
+![puck sprite](images/puck-sprite.png){:width="150px"}
+
+You're still working on the **puck sprite**.
 
 ## Step 1
 
-Click on the **player sprite**.
+Add a `hide`{:class="block3looks"} block to the `else`{:class="block3control"} part.
 
-Open the **Sounds** tab.
+Then add a `broadcast`{:class="block3events"} block under it, and choose `reset`{:class="block3events"} from the drop-down.
 
-![The Sounds tab.](images/sounds-tab.png){:width="450px"}
+```blocks3
+reset timer
+forever
+if <(timer) < (1)> then
+move (12) steps
+if on edge, bounce
+else
++hide
++broadcast (reset v)
+end
+end
+```
 
 ## Step 2
 
-Click **Choose a Sound** and pick one that will work for a swing from the library.
-
-![Choosing a sound.](images/sounds-choose.png){:width="250px"}
-
-## Step 3
-
-Back in the **Code** tab, add a `start sound`{:class="block3sound"} block and choose your sound.
+Add a `show`{:class="block3looks"} block to the top of the script, so the puck comes back for the next shot.
 
 ```blocks3
-wait until <not <mouse down?>>
-+start sound (Tennis Hit v)
-switch costume to (costume 2 v)
-wait (0.3) seconds
-switch costume to (costume 1 v)
+when I receive [reset v]
++show
+set rotation style [don't rotate v]
+set drag mode [not draggable v]
+repeat until <mouse down?>
+go to (stick v)
+point towards (mouse-pointer v)
+move (130) steps
+end
 ```
 
 ## Now run your code
 
-Click the **Green Flag**. Shoot the puck and check that your sound plays.
+Click the **Green Flag** and shoot the puck.
+Check that the puck disappears, then reappears on the stick ready for the next shot.
 
-![The player swings and a sound plays when the puck is shot.](images/step-7.gif){:width="450px"}
+![The puck hides one second after it is shot, then comes back to the stick.](images/step-7.gif){:width="450px"}

@@ -1,45 +1,48 @@
-## Make new lines of ice
+## Move the ice
 
-Make a new column of ice every few seconds.
-
-![ice sprite](images/ice-sprite.png){:width="150px"}
-
-You're still working on the **ice sprite**.
+Make the ice move towards the player.
 
 ## Step 1
 
-Add a `forever`{:class="block3control"} loop to the end of the green flag script.
+Click on the **ice sprite**.
 
-Add a `wait`{:class="block3control"} block with `ice speed`{:class="block3variables"} inside it.
+![ice sprite](images/ice-sprite.png){:width="150px"}
+
+## Step 2
+
+Make a variable called `ice speed`{:class="block3variables"} for all sprites.
+
+![The Make a Variable button in Scratch.](images/make-a-variable.png){:width="250px"}
+
+## Step 3
+
+Add a `set ice speed to`{:class="block3variables"} block set to `3` at the top of the green flag script.
 
 ```blocks3
 when green flag clicked
-set [ice speed v] to (3)
++set [ice speed v] to (3)
 go to x: (139) y: (-120)
-hide
 repeat (6)
 create clone of (myself v)
 change y by (45)
 end
-+forever
-wait (ice speed) seconds
-end
 ```
 
-## Step 2
+## Step 4
 
-Duplicate the `go to x: () y: ()`{:class="block3motion"} block and the `repeat`{:class="block3control"} loop.
-Put the copies inside the `forever`{:class="block3control"} loop.
+Add a second `when I start as a clone`{:class="block3control"} block that moves the ice left after `ice speed`{:class="block3variables"} seconds.
 
-Keeping the first set of blocks means a line of ice appears straight away, instead of waiting `ice speed`{:class="block3variables"} seconds for the first one.
-
-![Duplicating the go to block and the repeat loop, then dropping the copies inside the forever loop.](images/step-12-duplicate.gif){:width="450px"}
+```blocks3
+when I start as a clone
+forever
+wait (ice speed) seconds
+change x by (-50)
+end
+```
 
 ## Now run your code
 
 Click the **Green Flag**.
-Check that a new column of ice arrives every few seconds.
+Check that the ice steps to the left every three seconds.
 
-Change the number in the `set ice speed to`{:class="block3variables"} block to speed the ice up or slow it down.
-
-![A new column of ice arrives every few seconds.](images/step-12.gif){:width="450px"}
+![The column of ice steps to the left every three seconds.](images/step-12.gif){:width="450px"}

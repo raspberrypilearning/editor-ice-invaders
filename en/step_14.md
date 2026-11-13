@@ -1,6 +1,6 @@
-## Add a sound
+## Make new lines of ice
 
-Play a sound when the ice bursts.
+Make a new column of ice every few seconds.
 
 ![ice sprite](images/ice-sprite.png){:width="150px"}
 
@@ -8,29 +8,38 @@ You're still working on the **ice sprite**.
 
 ## Step 1
 
-Open the **Sounds** tab.
+Add a `forever`{:class="block3control"} loop to the end of the green flag script.
 
-![The Sounds tab.](images/sounds-tab.png){:width="450px"}
+Add a `wait`{:class="block3control"} block with `ice speed`{:class="block3variables"} inside it.
+
+```blocks3
+when green flag clicked
+set [ice speed v] to (3)
+go to x: (139) y: (-120)
+hide
+repeat (6)
+create clone of (myself v)
+change y by (45)
+end
++forever
+wait (ice speed) seconds
+end
+```
 
 ## Step 2
 
-Click **Choose a Sound** and pick one that will work for bursting ice from the library.
+Duplicate the `go to x: () y: ()`{:class="block3motion"} block and the `repeat`{:class="block3control"} loop.
+Put the copies inside the `forever`{:class="block3control"} loop.
 
-## Step 3
+Keeping the first set of blocks means a line of ice appears straight away, instead of waiting `ice speed`{:class="block3variables"} seconds for the first one.
 
-Back in the **Code** tab, add a `start sound`{:class="block3sound"} block above `delete this clone`{:class="block3control"} and choose your sound.
-
-```blocks3
-when I start as a clone
-show
-wait until <touching (puck v)?>
-+start sound (pop v)
-delete this clone
-```
+![Duplicating the go to block and the repeat loop, then dropping the copies inside the forever loop.](images/step-14-duplicate.gif){:width="450px"}
 
 ## Now run your code
 
-Click the **Green Flag** and shoot the puck at the ice.
-Check that your sound plays when the puck hits the ice.
+Click the **Green Flag**.
+Check that a new column of ice arrives every few seconds.
 
-![A sound plays when the ice bursts.](images/step-14.gif){:width="450px"}
+Change the number in the `set ice speed to`{:class="block3variables"} block to speed the ice up or slow it down.
+
+![A new column of ice arrives every few seconds.](images/step-14.gif){:width="450px"}

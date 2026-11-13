@@ -1,25 +1,48 @@
-## Challenges
+## Keep score
 
-Make the game your own.
+Count the ice blocks that get hit.
 
-## Set the scene
+![ice sprite](images/ice-sprite.png){:width="150px"}
 
-Choose a new backdrop for the stage from the library, or paint your own ice rink.
+You're still working on the **ice sprite**.
 
-## Make it harder
+## Step 1
 
-Lower the number in the set ice speed to block, so the ice closes in faster. Find the speed that makes the game fun.
+Make a variable called `score`{:class="block3variables"} for all sprites.
 
-## Speed up as the score climbs
+![The Make a Variable button in Scratch.](images/make-a-variable.png){:width="250px"}
 
-Add a change ice speed by -0.1 block where the score goes up, so every hit makes the next line arrive sooner.
+## Step 2
 
-## Give the player lives
+Add a `set score to`{:class="block3variables"} block set to `0` at the top of the green flag script.
 
-Make a lives variable and take one away when the ice reaches the player, instead of ending the game straight away.
+```blocks3
+when green flag clicked
++set [score v] to (0)
+set [ice speed v] to (3)
+hide
+go to x: (139) y: (-120)
+```
 
-## Add a soundtrack
+## Step 3
 
-Add music to the stage that plays while the game runs.
+Add a `change score by`{:class="block3variables"} block set to `1` under the `wait until`{:class="block3control"} block.
 
-![A game with a new backdrop.](images/step-18.gif){:width="450px"}
+```blocks3
+when I start as a clone
+show
+wait until <touching (puck v)?>
++change [score v] by (1)
+start sound (pop v)
+change [fisheye v] effect by (200)
+change size by (20)
+wait (0.05) seconds
+delete this clone
+```
+
+## Now run your code
+
+Click the **Green Flag** and shoot the puck at the ice.
+Check that the score goes up by one for every block of ice hit.
+
+![The score goes up by 1 when the puck hits a piece of ice.](images/step-18.gif){:width="450px"}

@@ -1,6 +1,6 @@
-## Shoot the puck
+## Move the puck
 
-Send the puck flying when the mouse is released.
+Move the puck to the end of the blade.
 
 ![puck sprite](images/puck-sprite.png){:width="150px"}
 
@@ -8,55 +8,37 @@ You're still working on the **puck sprite**.
 
 ## Step 1
 
-Add a `wait until`{:class="block3control"} block with a `not`{:class="block3operators"} block and a `mouse down?`{:class="block3sensing"} block.
-
-This makes the puck wait until the mouse is released.
+`Move`{:class="block3motion"} the puck `130` steps to position it on the blade of the stick.
 
 ```blocks3
-when I receive (reset v)
-set rotation style [don't rotate v]
-set drag mode [not draggable v]
+when I receive [reset v]
+repeat until <mouse down?>
+go to (stick v)
+point towards (mouse-pointer v)
++ move (130) steps
+end
+```
+
+## Step 2
+
+Stop the puck from turning by adding a `set rotation style`{:class="block3motion"} block set to `don't rotate`{:class="block3motion"}.
+
+Then add a `set drag mode`{:class="block3sensing"} block set to `not draggable`{:class="block3sensing"}.
+
+```blocks3
+when I receive [reset v]
++ set rotation style [don't rotate v]
++ set drag mode [not draggable v]
 repeat until <mouse down?>
 go to (stick v)
 point towards (mouse-pointer v)
 move (130) steps
 end
-+wait until <not <mouse down?>>
-```
-
-## Step 2
-
-Add a `forever`{:class="block3control"} loop with a `move steps`{:class="block3motion"} block inside.
-
-
-```blocks3
-wait until <not <mouse down?>>
-+forever
-move (12) steps
-end
-```
-
-## Step 3
-
-Add an `if on edge, bounce`{:class="block3motion"} block inside the `forever`{:class="block3control"} loop.
-
-```blocks3
-wait until <not <mouse down?>>
-forever
-move (12) steps
-+if on edge, bounce
-end
 ```
 
 ## Now run your code
 
-Click the **Green Flag**, move, then click. Check that the puck flies off in the direction you aimed at.
+Click the **Green Flag** and move the mouse.
+Check that the puck sits on the blade of the stick and moves with it as it turns.
 
-> [!TIP]
->
-> The puck moves `12` steps each time the loop repeats, so it keeps flying.
->
-> Experiment with different numbers to make it move faster or slower.
-
-![The puck flies off in the direction aimed when the mouse is released.](images/step-4.gif){:width="450px"}
- 
+![The puck sits on the blade of the stick and moves with it as the mouse moves.](images/step-4.gif){:width="450px"}
