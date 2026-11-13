@@ -2,7 +2,7 @@
 
 Count the ice blocks that get hit.
 
-![ice sprite](images/ice-sprite.png)
+![ice sprite](images/ice-sprite.png){:width="150px"}
 
 You're still working on the **ice sprite**.
 

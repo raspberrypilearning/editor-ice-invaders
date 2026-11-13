@@ -2,7 +2,7 @@
 
 Position the puck before you shoot.
 
-![puck sprite](images/puck-sprite.png)
+![puck sprite](images/puck-sprite.png){:width="150px"}
 
 ## Step 1
 

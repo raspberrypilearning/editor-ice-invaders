@@ -6,7 +6,7 @@ End the game when the ice reaches the player.
 
 Click on the **player sprite**.
 
-![player sprite](images/player-sprite.png)
+![player sprite](images/player-sprite.png){:width="150px"}
 
 ## Step 2
 

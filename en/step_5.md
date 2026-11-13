@@ -2,7 +2,7 @@
 
 Hide the puck after one second.
 
-![puck sprite](images/puck-sprite.png)
+![puck sprite](images/puck-sprite.png){:width="150px"}
 
 You're still working on the **puck sprite**.
 

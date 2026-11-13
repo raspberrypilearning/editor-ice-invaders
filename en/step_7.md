@@ -2,7 +2,7 @@
 
 Play a sound when the player swings.
 
-![player sprite](images/player-sprite.png)
+![player sprite](images/player-sprite.png){:width="150px"}
 
 ## Step 1
 

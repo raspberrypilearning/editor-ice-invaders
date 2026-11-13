@@ -6,7 +6,7 @@ Make the ice move towards the player.
 
 Click on the **ice sprite**.
 
-![ice sprite](images/ice-sprite.png)
+![ice sprite](images/ice-sprite.png){:width="150px"}
 
 ## Step 2
 

@@ -16,6 +16,12 @@ Draw a block of ice and position it in the centre of paint window.
 
 Name the sprite **ice** in the **Sprite** name box.
 
-![The Sprite name box with ice typed into it.](images/sprite-rename.png){:width="250px"}
+![The Sprite name box with ice typed into it.](images/ice-name.png){:width="250px"}
+
+## Step 4
+
+Change the number in the **Size** box until the block of ice is bigger than the puck.
+
+![The Size box in the sprite panel.](images/ice-size.png){:width="250px"}
 
 ![A block of ice is painted as a new sprite and the sprite is named ice.](images/step-8.gif){:width="450px"}

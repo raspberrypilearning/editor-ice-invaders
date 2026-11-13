@@ -2,7 +2,7 @@
 
 Repeat six blocks of ice in a line.
 
-![ice sprite](images/ice-sprite.png)
+![ice sprite](images/ice-sprite.png){:width="150px"}
 
 ## Step 1
 

@@ -2,7 +2,7 @@
 
 Make the player swing their arm when the puck is shot.
 
-![player sprite](images/player-sprite.png)
+![player sprite](images/player-sprite.png){:width="150px"}
 
 Click on the **player sprite**.
 

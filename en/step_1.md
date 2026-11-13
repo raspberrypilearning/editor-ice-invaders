@@ -5,7 +5,7 @@ Use the mouse to move the hockey stick.
 ## Step 1
 Click on the stick sprite, it has some blocks to get you started. 
 
-![stick sprite](images/stick-sprite.png)
+![stick sprite](images/stick-sprite.png){:width="150px"}
 
 
 ## Step 2

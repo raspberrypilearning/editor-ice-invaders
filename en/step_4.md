@@ -2,7 +2,7 @@
 
 Send the puck flying when the mouse is released.
 
-![puck sprite](images/puck-sprite.png)
+![puck sprite](images/puck-sprite.png){:width="150px"}
 
 You're still working on the **puck sprite**.
 
