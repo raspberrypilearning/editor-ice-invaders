@@ -59,3 +59,4 @@ Click the **Green Flag**, move, then click. Check that the puck flies off in the
 > Experiment with different numbers to make it move faster or slower.
 
 ![The puck flies off in the direction aimed when the mouse is released.](images/step-4.gif){:width="450px"}
+ 
