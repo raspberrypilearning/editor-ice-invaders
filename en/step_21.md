@@ -36,3 +36,4 @@ stop [all v]
 Click the **Green Flag** and let the ice reach the player. Check that the player looks surprised and a sound plays before the game stops.
 
 ![The player changes costume and the game stops when the ice reaches it.](images/step-21.gif){:width="450px"}
+

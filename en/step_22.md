@@ -6,6 +6,8 @@ Make the game your own.
 
 Choose a new backdrop for the stage from the library, or paint your own ice rink.
 
+![The player on cityscape backdrop.](images/challenge.png){:width="450px"}
+
 ## Make it harder
 
 Lower the number in the set ice speed to block, so the ice closes in faster. Find the speed that makes the game fun.

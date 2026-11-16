@@ -34,7 +34,7 @@ Name the sprite **puck** into the **Sprite** name box.
 
 ## Step 5
 
-Set the puck's `x` and `y` to `0`.
+Set the puck's **x** and **y** to `0`.
 
 ![The x and y boxes in the sprite panel, both set to 0.](images/puck-pos.png){:width="250px"}
 
