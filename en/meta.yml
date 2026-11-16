@@ -14,11 +14,12 @@ steps:
   - title: Stop the puck
   - title: Reload the puck
   - title: Animate player
-  - title: Add swing sound
+  - title: Add shoot sound
   - title: Create the ice
-  - title: Line up the ice
+  - title: Clone the ice
+  - title: Repeat clones
   - title: Move the ice
-  - title: Hide the sprite
+  - title: Hide the original
   - title: Make new lines of ice
   - title: Hit the ice
   - title: Add a sound
@@ -27,6 +28,7 @@ steps:
   - title: Game over
     completion:
       - internal
+  - title: Look surprised
   - title: Challenges
     challenge: true
     completion:

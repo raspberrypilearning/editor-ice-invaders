@@ -1,6 +1,6 @@
-## Add a sound
+## Hit the ice
 
-Play a sound when the ice bursts.
+Make an ice cube disappear when the puck hits it.
 
 ![ice sprite](images/ice-sprite.png){:width="150px"}
 
@@ -8,29 +8,27 @@ You're still working on the **ice sprite**.
 
 ## Step 1
 
-Open the **Sounds** tab.
+First check that the ice is touching the puck.
 
-![The Sounds tab.](images/sounds-tab.png){:width="450px"}
+Start a second `when I start as a clone`{:class="block3control"} and add a `wait until`{:class="block3control"} block, with `touching`{:class="block3sensing"} set to **puck** inside it.
+
+```blocks3
++when I start as a clone
++wait until <touching (puck v)?>
+```
 
 ## Step 2
 
-Click **Choose a Sound** and pick one that will work for bursting ice from the library.
-
-## Step 3
-
-Back in the **Code** tab, add a `start sound`{:class="block3sound"} block above `delete this clone`{:class="block3control"} and choose your sound.
+Make the ice disappear with a `delete this clone`{:class="block3control"}.
 
 ```blocks3
 when I start as a clone
-show
 wait until <touching (puck v)?>
-+start sound (pop v)
-delete this clone
++delete this clone
 ```
 
 ## Now run your code
 
-Click the **Green Flag** and shoot the puck at the ice.
-Check that your sound plays when the puck hits the ice.
+Click the **Green Flag** and shoot the puck at the ice. Check that the ice cube disappears when the puck hits it.
 
-![A sound plays when the ice bursts.](images/step-16.gif){:width="450px"}
+![An ice cube disappears when the puck hits it.](images/step-16.gif){:width="450px"}

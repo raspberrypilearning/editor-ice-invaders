@@ -1,6 +1,6 @@
-## Hide the sprite
+## Move the ice
 
-The original ice block does not move. Hide this so only clones are visible.
+The ice moves across the stage, getting closer to the player.
 
 ![ice sprite](images/ice-sprite.png){:width="150px"}
 
@@ -8,36 +8,53 @@ You're still working on the **ice sprite**.
 
 ## Step 1
 
-Add a `hide`{:class="block3looks"} block under `go to x: y: `{:class="block3motion"}.
+First make a speed for the ice.
+Make a variable called `ice speed`{:class="block3variables"} for all sprites.
+
+![The Make a Variable button in Scratch.](images/make-a-variable.png){:width="250px"}
+
+## Step 2
+
+Set `ice speed`{:class="block3variables"} to `3`. This is how often more ice will appear.
 
 ```blocks3
 when green flag clicked
-set [ice speed v] to (3)
++set [ice speed v] to (3)
 go to x: (139) y: (-120)
-+hide
 repeat (6)
 create clone of (myself v)
 change y by (45)
 end
 ```
 
-## Step 2
+## Step 3
 
-Add a `show`{:class="block3looks"} block under `when I start as a clone`{:class="block3control"}.
-
-Each clone shows itself as it is made.
+Add a `when I start as a clone`{:class="block3control"} block with a `forever`{:class="block3control"} loop.
 
 ```blocks3
 when I start as a clone
-+show
++forever
+end
+```
+
+## Step 4
+
+Move the ice left after `ice speed`{:class="block3variables"} seconds.
+
+```blocks3
+when I start as a clone
 forever
-wait (ice speed) seconds
-change x by (-50)
++wait (ice speed) seconds
++change x by (-50)
 end
 ```
 
 ## Now run your code
 
-Click the **Green Flag**. Check that six blocks of ice move across the stage, with nothing left behind.
+Click the **Green Flag**. Check that the ice moves towards the player.
 
-![The original sprite hides and the clones move across the stage.](images/step-13.gif){:width="450px"}
+> [!TIP]
+>
+> Change the `ice speed`{:class="block3variables"} number to make the ice move faster or slower.
+
+![The column of ice steps to the left every three seconds.](images/step-13.gif){:width="450px"}

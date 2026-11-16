@@ -1,6 +1,6 @@
 ## Place the puck
 
-Position the puck before you shoot.
+Put the puck on the blade of the stick.
 
 ![puck sprite](images/puck-sprite.png){:width="150px"}
 
@@ -38,7 +38,7 @@ end
 
 ## Now run your code
 
-Click the **Green Flag** and move the mouse.
-Check that the puck follows the stick, but it is in the wrong place.
+Click the **Green Flag** and check that the puck follows the stick.
+You can move it to the blade in the next step.
 
 ![The puck follows the stick but sits in the wrong place.](images/step-3.gif){:width="450px"}

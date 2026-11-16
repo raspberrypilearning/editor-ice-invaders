@@ -1,6 +1,6 @@
 ## Reload the puck
 
-Bring the puck back to the stick for the next shot.
+Reload the puck onto the blade for the next shot.
 
 ![puck sprite](images/puck-sprite.png){:width="150px"}
 
@@ -43,7 +43,6 @@ end
 
 ## Now run your code
 
-Click the **Green Flag** and shoot the puck.
-Check that the puck disappears, then reappears on the stick ready for the next shot.
+Click the **Green Flag** and shoot the puck. Check that the puck disappears, then reappears ready for the next shot.
 
 ![The puck hides one second after it is shot, then comes back to the stick.](images/step-7.gif){:width="450px"}

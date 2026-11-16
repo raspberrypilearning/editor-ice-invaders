@@ -1,48 +1,30 @@
-## Move the ice
+## Repeat clones
 
-Make the ice move towards the player.
-
-## Step 1
-
-Click on the **ice sprite**.
+Repeat six ice cubes in a line.
 
 ![ice sprite](images/ice-sprite.png){:width="150px"}
 
-## Step 2
+You're still working on the **ice sprite**.
 
-Make a variable called `ice speed`{:class="block3variables"} for all sprites.
+## Step 1
 
-![The Make a Variable button in Scratch.](images/make-a-variable.png){:width="250px"}
-
-## Step 3
-
-Add a `set ice speed to`{:class="block3variables"} block set to `3` at the top of the green flag script.
+Put the two blocks inside a `repeat`{:class="block3control"} loop set to `6`.
 
 ```blocks3
 when green flag clicked
-+set [ice speed v] to (3)
 go to x: (139) y: (-120)
-repeat (6)
++repeat (6)
 create clone of (myself v)
 change y by (45)
 end
 ```
 
-## Step 4
-
-Add a second `when I start as a clone`{:class="block3control"} block that moves the ice left after `ice speed`{:class="block3variables"} seconds.
-
-```blocks3
-when I start as a clone
-forever
-wait (ice speed) seconds
-change x by (-50)
-end
-```
+> [!TIP]
+>
+> Experiment with the number in the `repeat`{:class="block3control"} loop to make a longer or shorter line of ice.
 
 ## Now run your code
 
-Click the **Green Flag**.
-Check that the ice steps to the left every three seconds.
+Click the **Green Flag**. Check that a line of seven ice cubes appears.
 
-![The column of ice steps to the left every three seconds.](images/step-12.gif){:width="450px"}
+![A column of ice cubes down the right of the stage, with the player and stick.](images/step-12.png){:width="450px"}

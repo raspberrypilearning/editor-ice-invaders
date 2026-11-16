@@ -8,9 +8,7 @@ You're still working on the **puck sprite**.
 
 ## Step 1
 
-Add a `wait until`{:class="block3control"} block with a `not`{:class="block3operators"} block and a `mouse down?`{:class="block3sensing"} block.
-
-This makes the puck wait until the mouse is released.
+Make the puck wait until the mouse is released by adding a `wait until`{:class="block3control"} block with a `not`{:class="block3operators"} and a `mouse down?`{:class="block3sensing"} inside.
 
 ```blocks3
 when I receive [reset v]
@@ -48,13 +46,13 @@ move (10) steps
 end
 ```
 
-## Now run your code
-
-Click the **Green Flag**, move, then click. Check that the puck flies off in the direction you aimed at.
-
 > [!TIP]
 >
-> Experiment with different numbers in the `move (10) steps`{:class="block3motion"} block to make the puck move faster or slower.
+> Make the puck move faster or slower by experimenting with different numbers in the `move`{:class="block3motion"} block.
+
+## Now run your code
+
+Click the **Green Flag** and then click. Check that the puck flies off in the direction you aimed at.
 
 ![The puck flies off in the direction aimed when the mouse is released.](images/step-5.gif){:width="450px"}
  

@@ -2,7 +2,7 @@
 
 Make a hockey shoot out game!
 
-Aim your stick and shoot the puck to pop blocks of ice. Don't let the ice get close!
+Aim your stick and shoot the puck to pop ice cubes. Don't let the ice get close!
 
 Try it out, click the **Green Flag** to play.
 

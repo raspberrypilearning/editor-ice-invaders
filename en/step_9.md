@@ -1,12 +1,12 @@
-## Add swing sound
+## Add shoot sound
 
-Play a sound when the player swings.
+Play a sound when the player shoots the puck.
 
 ![player sprite](images/player-sprite.png){:width="150px"}
 
-## Step 1
+You're still working on the **player sprite**.
 
-Click on the **player sprite**.
+## Step 1
 
 Open the **Sounds** tab.
 
@@ -14,24 +14,28 @@ Open the **Sounds** tab.
 
 ## Step 2
 
-Click **Choose a Sound** and pick one that will work for a swing from the library.
+Click **Choose a Sound**.
 
 ![Choosing a sound.](images/sounds-choose.png){:width="250px"}
 
 ## Step 3
 
-Back in the **Code** tab, add a `start sound`{:class="block3sound"} block and choose your sound.
+Pick a sound that will work for a swing from the library.
+
+![The Choose a Sound library.](images/sounds-list.png){:width="450px"}
+
+## Step 4
+
+In the **Code** tab, add a `start sound`{:class="block3sound"} block and choose your sound.
 
 ```blocks3
 wait until <not <mouse down?>>
 +start sound (Tennis Hit v)
-switch costume to (costume2 v)
+switch costume to (shoot v)
 wait (0.3) seconds
-switch costume to (costume1 v)
+switch costume to (stand v)
 ```
 
 ## Now run your code
 
 Click the **Green Flag**. Shoot the puck and check that your sound plays.
-
-![The player swings and a sound plays when the puck is shot.](images/step-9.gif){:width="450px"}

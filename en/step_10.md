@@ -1,6 +1,6 @@
 ## Create the ice
 
-Make a block of ice for the puck to pop.
+Make an ice cube for the puck to pop.
 
 ## Step 1
 
@@ -10,7 +10,9 @@ Hover over the **Choose a Sprite** button and click **Paint**.
 
 ## Step 2
 
-Draw a block of ice and position it in the centre of paint window.
+Draw an ice cube and position it in the centre of paint window.
+
+![The paint tools with the Brush tool selected.](images/paint-tool.png){:width="150px"}
 
 ## Step 3
 
@@ -20,8 +22,8 @@ Name the sprite **ice** in the **Sprite** name box.
 
 ## Step 4
 
-Change the number in the **Size** box until the block of ice is bigger than the puck.
+Change the number in the **Size** box until the ice cube is bigger than the puck.
 
 ![The Size box in the sprite panel.](images/ice-size.png){:width="250px"}
 
-![A block of ice is painted as a new sprite and the sprite is named ice.](images/step-10.gif){:width="450px"}
+![An ice cube is painted as a new sprite and the sprite is named ice.](images/ice-create.png){:width="450px"}

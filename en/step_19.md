@@ -1,74 +1,44 @@
-## Game over
+## Keep score
 
-End the game when the ice reaches the player.
+Count the ice cubes that get hit.
+
+![ice sprite](images/ice-sprite.png){:width="150px"}
+
+You're still working on the **ice sprite**.
 
 ## Step 1
 
-Click on the **player sprite**.
+Make a variable called `score`{:class="block3variables"} for all sprites.
 
-![player sprite](images/player-sprite.png){:width="150px"}
+![The Make a Variable button in Scratch.](images/make-a-variable.png){:width="250px"}
 
 ## Step 2
 
-Add a new script with an empty `wait until`{:class="block3control"} block.
+Add a `set score`{:class="block3variables"} to `0` block at the top of the green flag script.
 
 ```blocks3
 when green flag clicked
-wait until < >
+hide
++set [score v] to (0)
+set [ice speed v] to (3)
+go to x: (139) y: (-120)
 ```
 
 ## Step 3
 
-Add a `touching`{:class="block3sensing"} block set to **ice**.
+`Change score`{:class="block3variables"} by `1` when the ice touches the puck.
 
 ```blocks3
-when green flag clicked
-wait until <touching (ice v)?>
-```
-
-## Step 4
-
-Add a `stop other scripts in sprite`{:class="block3control"} block.
-
-```blocks3
-when green flag clicked
-wait until <touching (ice v)?>
-+stop [other scripts in sprite v]
-```
-
-## Step 5
-
-Add a `wait`{:class="block3control"} block set to `0.1` seconds and a `switch costume to`{:class="block3looks"} block set to `costume3`{:class="block3looks"}.
-
-```blocks3
-stop [other scripts in sprite v]
-+wait (0.1) seconds
-+switch costume to (costume3 v)
-```
-
-## Step 6
-
-Add a `play sound until done`{:class="block3sound"} block set to `Alien Creak2`{:class="block3sound"}.
-
-```blocks3
-wait (0.1) seconds
-switch costume to (costume3 v)
-+play sound (Alien Creak2 v) until done
-```
-
-## Step 7
-
-Add a `stop all`{:class="block3control"} block.
-
-```blocks3
-switch costume to (costume3 v)
-play sound (Alien Creak2 v) until done
-+stop [all v]
+when I start as a clone
+wait until <touching (puck v)?>
++change [score v] by (1)
+start sound (pop v)
+change [fisheye v] effect by (200)
+change size by (20)
+wait (0.05) seconds
+delete this clone
 ```
 
 ## Now run your code
 
-Click the **Green Flag** and let the ice reach the player.
-Check that the player changes costume, a sound plays, and the game stops.
-
-![The player changes costume and the game stops when the ice reaches it.](images/step-19.gif){:width="450px"}
+Click the **Green Flag** and shoot the puck at the ice. Check that the score goes up by one for every ice cube hit.

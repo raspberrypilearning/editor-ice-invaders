@@ -21,8 +21,6 @@ set drag mode [not draggable v]
 
 > [!TIP]
 >
-> A `broadcast`{:class="block3events"} block sends a message that other scripts listen out for.
->
 > Click the drop-down on the `broadcast`{:class="block3events"} block and choose `reset`{:class="block3events"}.
 >
 > ![The broadcast block drop-down with reset in the list.](images/reset-dropdown.png){:width="250px"}

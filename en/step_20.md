@@ -1,25 +1,49 @@
-## Challenges
+## Game over
 
-Make the game your own.
+End the game when the ice reaches the player.
 
-## Set the scene
+## Step 1
 
-Choose a new backdrop for the stage from the library, or paint your own ice rink.
+Click on the **player sprite**.
 
-## Make it harder
+![player sprite](images/player-sprite.png){:width="150px"}
 
-Lower the number in the set ice speed to block, so the ice closes in faster. Find the speed that makes the game fun.
+## Step 2
 
-## Speed up as the score climbs
+Add a new green flag block that `waits until`{:class="block3control"} it is `touching`{:class="block3sensing"} the ice.
 
-Add a change ice speed by -0.1 block where the score goes up, so every hit makes the next line arrive sooner.
+```blocks3
++when green flag clicked
++wait until <touching (ice v)?>
+```
 
-## Give the player lives
+## Step 3
 
-Make a lives variable and take one away when the ice reaches the player, instead of ending the game straight away.
+Add a `stop other scripts in sprite`{:class="block3control"} block.
 
-## Add a soundtrack
+```blocks3
+when green flag clicked
+wait until <touching (ice v)?>
++stop [other scripts in sprite v]
+```
 
-Add music to the stage that plays while the game runs.
+> [!TIP]
+>
+> The `stop other scripts`{:class="block3control"} block can be found in the drop-down of `stop all`{:class="block3control"}.
+>
+> ![Choosing other scripts in sprite from the stop all drop-down.](images/stop-other.gif){:width="450px"}
 
-![A game with a new backdrop.](images/step-20.gif){:width="450px"}
+## Step 4
+
+Add a `stop all`{:class="block3control"} block.
+
+```blocks3
+when green flag clicked
+wait until <touching (ice v)?>
+stop [other scripts in sprite v]
++stop [all v]
+```
+
+## Now run your code
+
+Click the **Green Flag** and let the ice reach the player. Check that the game stops.

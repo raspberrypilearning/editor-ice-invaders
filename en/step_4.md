@@ -38,7 +38,6 @@ end
 
 ## Now run your code
 
-Click the **Green Flag** and move the mouse.
-Check that the puck sits on the blade of the stick and moves with it as it turns.
+Click the **Green Flag** and check that the puck sits on the blade of the stick.
 
 ![The puck sits on the blade of the stick and moves with it as the mouse moves.](images/step-4.gif){:width="450px"}

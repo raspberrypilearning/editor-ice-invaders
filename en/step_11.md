@@ -1,6 +1,6 @@
-## Line up the ice
+## Clone the ice
 
-Repeat six blocks of ice in a line.
+Make a copy of the ice cube.
 
 ![ice sprite](images/ice-sprite.png){:width="150px"}
 
@@ -8,18 +8,18 @@ Repeat six blocks of ice in a line.
 
 Click on the **ice sprite**.
 
-Add a green flag and set its `x` and `y` starting positions.
+## Step 2
+
+In the **Code** tab, add a green flag and set its `x` and `y` starting positions.
 
 ```blocks3
 when green flag clicked
 go to x: (139) y: (-120)
 ```
 
-## Step 2
+## Step 3
 
-Add a `create clone of myself`{:class="block3control"} block and a `change y by`{:class="block3motion"} block set to `45`.
-
-You may need to play with the number to suit your sprite.
+Add a `create clone`{:class="block3control"} block and then `change y`{:class="block3motion"} by `45`.
 
 ```blocks3
 when green flag clicked
@@ -28,29 +28,12 @@ go to x: (139) y: (-120)
 +change y by (45)
 ```
 
-> [!TIP]
->
-> A **clone** is a copy of a sprite.
-
-## Step 3
-
-Put the two blocks inside a `repeat`{:class="block3control"} loop set to `6`.
-
-```blocks3
-when green flag clicked
-go to x: (139) y: (-120)
-+repeat (6)
-create clone of (myself v)
-change y by (45)
-end
-```
-
-> [!TIP]
->
-> Experiment with the number in the `repeat`{:class="block3control"} loop to make a longer or shorter line of ice.
-
 ## Now run your code
 
-Click the **Green Flag**. Check that a line of six blocks of ice appears.
+Click the **Green Flag** and check that a second ice cube appears above the first.
 
-![The blocks that make a column of six clones of the ice sprite.](images/step-11.gif){:width="450px"}
+> [!TIP]
+>
+> You may need to change the number to suit your sprite.
+
+![Two ice cubes on the stage, one above the other, with the player and stick.](images/step-11.png){:width="450px"}

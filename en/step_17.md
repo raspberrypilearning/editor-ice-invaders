@@ -1,6 +1,6 @@
-## Burst effect
+## Add a sound
 
-Make the ice burst as it disappears.
+Play a sound when the ice bursts.
 
 ![ice sprite](images/ice-sprite.png){:width="150px"}
 
@@ -8,43 +8,30 @@ You're still working on the **ice sprite**.
 
 ## Step 1
 
-Add a `change effect by`{:class="block3looks"} block set to `fisheye` and `200` under the `start sound`{:class="block3sound"} block.
+Open the **Sounds** tab.
 
-```blocks3
-when I start as a clone
-show
-wait until <touching (puck v)?>
-start sound (pop v)
-+change [fisheye v] effect by (200)
-delete this clone
-```
+![The Sounds tab.](images/sounds-tab.png){:width="450px"}
 
 ## Step 2
 
-Add a `change size by`{:class="block3looks"} block set to `20`.
+Click **Choose a Sound** and pick one that will work for bursting ice from the library.
 
-```blocks3
-wait until <touching (puck v)?>
-start sound (pop v)
-change [fisheye v] effect by (200)
-+change size by (20)
-delete this clone
-```
+![Choosing a sound.](images/sounds-choose.png){:width="250px"}
 
 ## Step 3
 
-Add a `wait`{:class="block3control"} block set to `0.05` seconds, so the burst can be seen.
+In the **Code** tab, add a `start sound`{:class="block3sound"} block and choose your sound.
+
+Then add a `wait`{:class="block3control"} block set to `0.05` seconds.
 
 ```blocks3
-change [fisheye v] effect by (200)
-change size by (20)
+when I start as a clone
+wait until <touching (puck v)?>
++start sound (pop v)
 +wait (0.05) seconds
 delete this clone
 ```
 
 ## Now run your code
 
-Click the **Green Flag** and shoot the puck at the ice.
-Check that the ice swells and bursts before it disappears.
-
-![The ice swells and bursts when the puck hits it.](images/step-17.gif){:width="450px"}
+Click the **Green Flag** and shoot the puck at the ice. Check that your sound plays when the puck hits the ice.
