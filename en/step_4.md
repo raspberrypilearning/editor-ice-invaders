@@ -21,9 +21,9 @@ end
 
 ## Step 2
 
-Stop the puck from turning by adding a `set rotation style`{:class="block3motion"} block set to `don't rotate`{:class="block3motion"}.
+Set the `rotation style` to 'don't rotate' so that it stops turning.
 
-Then add a `set drag mode`{:class="block3sensing"} block set to `not draggable`{:class="block3sensing"}.
+Then make it 'not draggable' with a `set drag mode` block.
 
 ```blocks3
 when I receive [reset v]

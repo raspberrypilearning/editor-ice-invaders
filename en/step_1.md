@@ -19,34 +19,19 @@ set drag mode [not draggable v]
 +broadcast (reset v)
 ```
 
-## Step 3
-
-Click the drop-down on the `broadcast`{:class="block3events"} block and choose `reset`{:class="block3events"}.
-
-![The broadcast block drop-down with reset in the list.](images/reset-dropdown.png){:width="250px"}
-
 > [!TIP]
+>
 > A `broadcast`{:class="block3events"} block sends a message that other scripts listen out for.
+>
+> Click the drop-down on the `broadcast`{:class="block3events"} block and choose `reset`{:class="block3events"}.
+>
+> ![The broadcast block drop-down with reset in the list.](images/reset-dropdown.png){:width="250px"}
 
-## Step 4
+## Step 3
 
 Add a `when I receive`{:class="block3events"} block set to `reset`{:class="block3events"}.
 
-Then add a `repeat until`{:class="block3control"} loop, with a `point towards`{:class="block3motion"} mouse block inside.
-
-
-```blocks3
-when I receive [reset v]
-+repeat until < >
-point towards (mouse-pointer v)
-end
-```
-
-**Test:** click the green button and check that the stick moves.
-
-## Step 5
-
-Add a `mouse down`{:class="block3sensing"} block to stop the movement when clicked.
+Then add a `repeat until`{:class="block3control"} loop with a `mouse down`{:class="block3sensing"} block, and a `point towards`{:class="block3motion"} mouse block inside.
 
 ```blocks3
 when I receive [reset v]

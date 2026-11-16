@@ -22,12 +22,16 @@ Type `1` into the second box.
 wait until <not <mouse down?>>
 forever
 +if <(timer) < (1)> then
-move (12) steps
+move (10) steps
 if on edge, bounce
 else
 end
 end
 ```
+
+> [!TIP]
+>
+> Change the number next to `timer`{:class="block3sensing"} to make the puck stop sooner or later.
 
 ## Step 3
 
@@ -38,7 +42,7 @@ wait until <not <mouse down?>>
 +reset timer
 forever
 if <(timer) < (1)> then
-move (12) steps
+move (10) steps
 if on edge, bounce
 else
 end
@@ -49,9 +53,5 @@ end
 
 Click the **Green Flag** and shoot the puck.
 Check that the puck stops one second after it is shot.
-
-> [!TIP]
->
-> Change the number next to `timer`{:class="block3sensing"} to make the puck stop sooner or later.
 
 ![The puck stops one second after it is shot.](images/step-6.gif){:width="450px"}

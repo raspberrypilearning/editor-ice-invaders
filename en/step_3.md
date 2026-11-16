@@ -31,9 +31,10 @@ end
 ```
 
 > [!TIP]
-> **stick** only appears in the `go to`{:class="block3motion"} drop-down once you click it open.
-
-![The go to block drop-down with stick in the list.](images/goto-stick.png){:width="250px"}
+>
+> Use the drop-down to select **stick**.
+>
+> ![The go to block drop-down with stick in the list.](images/goto-stick.png){:width="250px"}
 
 ## Now run your code
 

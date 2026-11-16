@@ -16,7 +16,7 @@ Then add a `broadcast`{:class="block3events"} block under it, and choose `reset`
 reset timer
 forever
 if <(timer) < (1)> then
-move (12) steps
+move (10) steps
 if on edge, bounce
 else
 +hide

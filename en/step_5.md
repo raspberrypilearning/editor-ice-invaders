@@ -32,7 +32,7 @@ Add a `forever`{:class="block3control"} loop with a `move steps`{:class="block3m
 ```blocks3
 wait until <not <mouse down?>>
 +forever
-move (12) steps
+move (10) steps
 end
 ```
 
@@ -43,7 +43,7 @@ Add an `if on edge, bounce`{:class="block3motion"} block inside the `forever`{:c
 ```blocks3
 wait until <not <mouse down?>>
 forever
-move (12) steps
+move (10) steps
 +if on edge, bounce
 end
 ```
@@ -54,7 +54,7 @@ Click the **Green Flag**, move, then click. Check that the puck flies off in the
 
 > [!TIP]
 >
-> Experiment with different numbers in the `move (12) steps`{:class="block3motion"} block to make the puck move faster or slower.
+> Experiment with different numbers in the `move (10) steps`{:class="block3motion"} block to make the puck move faster or slower.
 
 ![The puck flies off in the direction aimed when the mouse is released.](images/step-5.gif){:width="450px"}
  
