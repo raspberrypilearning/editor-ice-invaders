@@ -6,8 +6,6 @@ Repeat six ice cubes in a line.
 
 You're still working on the **ice sprite**.
 
-## Step 1
-
 Put the two blocks inside a `repeat`{:class="block3control"} loop set to `6`.
 
 ```blocks3
@@ -26,5 +24,6 @@ end
 ## Now run your code
 
 Click the **Green Flag**. Check that a line of seven **ice** cubes appears.
+That is six clones, plus the original **ice** cube.
 
 ![A column of ice cubes down the right of the stage, with the player and stick.](images/step-12.png){:width="450px"}

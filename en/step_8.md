@@ -16,13 +16,13 @@ when I receive [reset v]
 go to x: (-159) y: (-58)
 set drag mode [not draggable v]
 + repeat until <mouse down?>
-+ switch costume to (stand v)
+switch costume to (stand v)
 end
 ```
 
 ## Step 2
 
-Add a `wait until`{:class="block3control"} block with `not mouse down?`{:class="block3sensing"} after the loop.
+Add a `wait until`{:class="block3control"} block with `not`{:class="block3operators"} `mouse down?`{:class="block3sensing"} after the loop.
 
 ```blocks3
 when I receive [reset v]

@@ -1,6 +1,6 @@
 ## Clone the ice
 
-Make a copy of the ice cube.
+Make a clone of the ice cube.
 
 ![ice sprite](images/ice-sprite.png){:width="80px"}
 
