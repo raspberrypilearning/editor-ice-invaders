@@ -2,6 +2,7 @@ title: Ice invaders
 hero_image: images/banner.png
 description: Aim a hockey stick and shoot pucks to stop the ice invaders
 listed: false
+landing: true
 pdf: false
 steps:
   - title: Move the stick
