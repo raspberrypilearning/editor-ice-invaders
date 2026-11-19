@@ -1,14 +1,35 @@
 title: Ice invaders
 hero_image: images/banner.png
-description: A short description of the project
+description: Aim a hockey stick and shoot pucks to stop the ice invaders
 listed: false
 pdf: false
 steps:
-  - title: What you will make
-  - title: Step title
+  - title: Move the stick
     completion:
-      - engaged      
-  - title: Challenge
+      - engaged
+  - title: Create a puck
+  - title: Place the puck
+  - title: Move the puck
+  - title: Shoot the puck
+  - title: Stop the puck
+  - title: Reload the puck
+  - title: Animate player
+  - title: Add shoot sound
+  - title: Create the ice
+  - title: Clone the ice
+  - title: Repeat clones
+  - title: Move the ice
+  - title: Hide the original
+  - title: Make new lines of ice
+  - title: Hit the ice
+  - title: Add a sound
+  - title: Burst effect
+  - title: Keep score
+  - title: Game over
+    completion:
+      - internal
+  - title: Look surprised
+  - title: Challenges
     challenge: true
     completion:
       - external

@@ -1,45 +1,46 @@
-## What you will make
-OR
-## What you will do - change meta if you use this
+## Move the stick
 
-A brief description - one or two sentences. 
+Use the mouse to move the hockey stick.
 
---- print-only ---
+## Step 1
+Click on the **stick sprite**, it has some blocks to get you started. 
 
-![ALT TEXT](images/IMAGE.png)
+![stick sprite](images/stick-sprite.png){:width="80px"}
 
---- /print-only ---
 
---- no-print ---
+## Step 2
 
-[Editor embed](https://editor.raspberrypi.org/en/embed/viewer/project-slug)
+Add a `broadcast`{:class="block3events"} block to the bottom of the green flag script.
 
---- /no-print ---
+```blocks3
+when green flag clicked
+go to x: (-168) y: (-51)
+set drag mode [not draggable v]
++broadcast (reset v)
+```
 
---- no-print ---
+> [!TIP]
+>
+> Click the drop-down on the `broadcast`{:class="block3events"} block and choose `reset`{:class="block3events"}.
+>
+> ![The broadcast block drop-down with reset in the list.](images/reset-dropdown.png){:width="250px"}
 
-Video embed
+## Step 3
 
-<video width="640" height="360" controls>
-<source src="images/videoname.mp4" type="video/mp4">
-</video>
+Add a `when I receive`{:class="block3events"} block set to `reset`{:class="block3events"}.
 
-Youtube embed 
-<html>
-<div style="position: relative; overflow: hidden; padding-top: 56.25%;">
-<iframe style="position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;" src="https://www.youtube.com/embed/XXXXXXXXX?rel=0&cc_load_policy=1" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-</iframe>
-</div><br>
-</html>
+Then add a `repeat until`{:class="block3control"} loop with a `mouse down`{:class="block3sensing"} block, and a `point towards`{:class="block3motion"} mouse block inside.
 
-Scratch embed
-<div class="scratch-preview">
- <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/XXXXXXXXX/?autostart=false" frameborder="0"></iframe>
-</div>
+```blocks3
+when I receive [reset v]
+repeat until <mouse down?>
+point towards (mouse-pointer v)
+end
+```
 
---- /no-print ---
 
-### You will need:
-- a
-- b
-- c
+## Now run your code
+
+Click the **Green Flag**. Check that the **stick** moves with the mouse pointer and stops when clicked.
+
+![The stick follows the mouse pointer and stops turning when the mouse is clicked.](images/step-1.gif){:width="450px"}
