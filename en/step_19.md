@@ -2,7 +2,7 @@
 
 Count the ice cubes that get hit.
 
-![ice sprite](images/ice-sprite.png){:width="150px"}
+![ice sprite](images/ice-sprite.png){:width="80px"}
 
 You're still working on the **ice sprite**.
 
@@ -26,7 +26,7 @@ go to x: (139) y: (-120)
 
 ## Step 3
 
-`Change score`{:class="block3variables"} by `1` when the ice touches the puck.
+`Change score`{:class="block3variables"} by `1` when the **ice** touches the **puck**.
 
 ```blocks3
 when I start as a clone
@@ -41,4 +41,4 @@ delete this clone
 
 ## Now run your code
 
-Click the **Green Flag** and shoot the puck at the ice. Check that the score goes up by one for every ice cube hit.
+Click the **Green Flag** and shoot the **puck** at the **ice**. Check that the score goes up by one for every **ice** cube hit.

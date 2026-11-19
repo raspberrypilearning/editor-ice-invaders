@@ -2,7 +2,7 @@
 
 Make a copy of the ice cube.
 
-![ice sprite](images/ice-sprite.png){:width="150px"}
+![ice sprite](images/ice-sprite.png){:width="80px"}
 
 ## Step 1
 
@@ -30,7 +30,7 @@ go to x: (139) y: (-120)
 
 ## Now run your code
 
-Click the **Green Flag** and check that a second ice cube appears above the first.
+Click the **Green Flag** and check that a second **ice** cube appears above the first.
 
 > [!TIP]
 >

@@ -2,7 +2,7 @@
 
 The original ice cube stays still. Hide it so only the clones show.
 
-![ice sprite](images/ice-sprite.png){:width="150px"}
+![ice sprite](images/ice-sprite.png){:width="80px"}
 
 You're still working on the **ice sprite**.
 
@@ -38,6 +38,6 @@ end
 
 ## Now run your code
 
-Click the **Green Flag**. Check that six ice cubes move across the stage, with nothing left behind.
+Click the **Green Flag**. Check that six **ice** cubes move across the stage, with nothing left behind.
 
 ![Six ice cubes in a line on the stage, with the original hidden.](images/step-14.png){:width="450px"}

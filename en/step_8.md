@@ -2,7 +2,7 @@
 
 Make the player swing their arm when the puck is shot.
 
-![player sprite](images/player-sprite.png){:width="150px"}
+![player sprite](images/player-sprite.png){:width="80px"}
 
 Click on the **player sprite**.
 
@@ -47,6 +47,6 @@ wait until <not <mouse down?>>
 
 ## Now run your code
 
-Click the **Green Flag**. Shoot the puck and check that the player animates.
+Click the **Green Flag**. Shoot the **puck** and check that the **player** animates.
 
 ![The player swings the stick when the mouse is released.](images/step-8.gif){:width="450px"}

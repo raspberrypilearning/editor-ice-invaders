@@ -2,7 +2,7 @@
 
 Play a sound when the player shoots the puck.
 
-![player sprite](images/player-sprite.png){:width="150px"}
+![player sprite](images/player-sprite.png){:width="80px"}
 
 You're still working on the **player sprite**.
 
@@ -38,4 +38,4 @@ switch costume to (stand v)
 
 ## Now run your code
 
-Click the **Green Flag**. Shoot the puck and check that your sound plays.
+Click the **Green Flag**. Shoot the **puck** and check that your sound plays.

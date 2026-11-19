@@ -2,7 +2,7 @@
 
 Play a sound when the ice bursts.
 
-![ice sprite](images/ice-sprite.png){:width="150px"}
+![ice sprite](images/ice-sprite.png){:width="80px"}
 
 You're still working on the **ice sprite**.
 
@@ -14,7 +14,7 @@ Open the **Sounds** tab.
 
 ## Step 2
 
-Click **Choose a Sound** and pick one that will work for bursting ice from the library.
+Click **Choose a Sound** and pick one that will work for bursting **ice** from the library.
 
 ![Choosing a sound.](images/sounds-choose.png){:width="250px"}
 
@@ -34,4 +34,4 @@ delete this clone
 
 ## Now run your code
 
-Click the **Green Flag** and shoot the puck at the ice. Check that your sound plays when the puck hits the ice.
+Click the **Green Flag** and shoot the **puck** at the **ice**. Check that your sound plays when the **puck** hits the **ice**.

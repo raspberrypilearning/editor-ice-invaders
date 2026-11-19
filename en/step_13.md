@@ -2,20 +2,20 @@
 
 The ice moves across the stage, getting closer to the player.
 
-![ice sprite](images/ice-sprite.png){:width="150px"}
+![ice sprite](images/ice-sprite.png){:width="80px"}
 
 You're still working on the **ice sprite**.
 
 ## Step 1
 
-First make a speed for the ice.
+First make a speed for the **ice**.
 Make a variable called `ice speed`{:class="block3variables"} for all sprites.
 
 ![The Make a Variable button in Scratch.](images/make-a-variable.png){:width="250px"}
 
 ## Step 2
 
-Set `ice speed`{:class="block3variables"} to `3`. This is how often more ice will appear.
+Set `ice speed`{:class="block3variables"} to `3`. This is how often more **ice** will appear.
 
 ```blocks3
 when green flag clicked
@@ -39,7 +39,7 @@ end
 
 ## Step 4
 
-Move the ice left after `ice speed`{:class="block3variables"} seconds.
+Move the **ice** left after `ice speed`{:class="block3variables"} seconds.
 
 ```blocks3
 when I start as a clone
@@ -51,10 +51,10 @@ end
 
 ## Now run your code
 
-Click the **Green Flag**. Check that the ice moves towards the player.
+Click the **Green Flag**. Check that the **ice** moves towards the **player**.
 
 > [!TIP]
 >
-> Change the `ice speed`{:class="block3variables"} number to make the ice move faster or slower.
+> Change the `ice speed`{:class="block3variables"} number to make the **ice** move faster or slower.
 
 ![The column of ice steps to the left every three seconds.](images/step-13.gif){:width="450px"}

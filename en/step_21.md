@@ -2,7 +2,7 @@
 
 Use sound and costumes to make the player animate.
 
-![player sprite](images/player-sprite.png){:width="150px"}
+![player sprite](images/player-sprite.png){:width="80px"}
 
 You're still working on the **player sprite**.
 
@@ -33,7 +33,7 @@ stop [all v]
 
 ## Now run your code
 
-Click the **Green Flag** and let the ice reach the player. Check that the player looks surprised and a sound plays before the game stops.
+Click the **Green Flag** and let the **ice** reach the **player**. Check that the **player** looks surprised and a sound plays before the game stops.
 
 ![The player changes costume and the game stops when the ice reaches it.](images/step-21.gif){:width="450px"}
 

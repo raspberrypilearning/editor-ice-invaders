@@ -2,7 +2,7 @@
 
 Make a new column of ice every few seconds.
 
-![ice sprite](images/ice-sprite.png){:width="150px"}
+![ice sprite](images/ice-sprite.png){:width="80px"}
 
 You're still working on the **ice sprite**.
 
@@ -59,6 +59,6 @@ end
 
 ## Now run your code
 
-Click the **Green Flag**. Check that a new column of ice arrives every few seconds.
+Click the **Green Flag**. Check that a new column of **ice** arrives every few seconds.
 
 ![A new column of ice arrives every few seconds.](images/step-15.gif){:width="450px"}

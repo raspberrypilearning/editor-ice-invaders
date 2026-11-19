@@ -6,11 +6,11 @@ End the game when the ice reaches the player.
 
 Click on the **player sprite**.
 
-![player sprite](images/player-sprite.png){:width="150px"}
+![player sprite](images/player-sprite.png){:width="80px"}
 
 ## Step 2
 
-Add a new green flag block that `waits until`{:class="block3control"} it is `touching`{:class="block3sensing"} the ice.
+Add a new green flag block that `waits until`{:class="block3control"} it is `touching`{:class="block3sensing"} the **ice**.
 
 ```blocks3
 +when green flag clicked
@@ -46,4 +46,4 @@ stop [other scripts in sprite v]
 
 ## Now run your code
 
-Click the **Green Flag** and let the ice reach the player. Check that the game stops.
+Click the **Green Flag** and let the **ice** reach the **player**. Check that the game stops.

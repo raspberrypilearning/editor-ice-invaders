@@ -2,7 +2,7 @@
 
 Give the ice a burst as it disappears.
 
-![ice sprite](images/ice-sprite.png){:width="150px"}
+![ice sprite](images/ice-sprite.png){:width="80px"}
 
 You're still working on the **ice sprite**.
 
@@ -34,6 +34,6 @@ delete this clone
 
 ## Now run your code
 
-Click the **Green Flag** and shoot the puck at the ice. Check that you are happy with the burst effect.
+Click the **Green Flag** and shoot the **puck** at the **ice**. Check that you are happy with the burst effect.
 
 ![The ice grows and distorts before it disappears when the puck hits it.](images/step-18.gif){:width="450px"}

@@ -2,13 +2,13 @@
 
 Move the puck to the end of the blade.
 
-![puck sprite](images/puck-sprite.png){:width="150px"}
+![puck sprite](images/puck-sprite.png){:width="80px"}
 
 You're still working on the **puck sprite**.
 
 ## Step 1
 
-`Move`{:class="block3motion"} the puck `130` steps to position it on the blade of the stick.
+`Move`{:class="block3motion"} the **puck** `130` steps to position it on the blade of the **stick**.
 
 ```blocks3
 when I receive [reset v]
@@ -38,6 +38,6 @@ end
 
 ## Now run your code
 
-Click the **Green Flag** and check that the puck sits on the blade of the stick.
+Click the **Green Flag** and check that the **puck** sits on the blade of the **stick**.
 
 ![The puck sits on the blade of the stick and moves with it as the mouse moves.](images/step-4.gif){:width="450px"}

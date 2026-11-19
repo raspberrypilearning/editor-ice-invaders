@@ -2,13 +2,13 @@
 
 Reload the puck onto the blade for the next shot.
 
-![puck sprite](images/puck-sprite.png){:width="150px"}
+![puck sprite](images/puck-sprite.png){:width="80px"}
 
 You're still working on the **puck sprite**.
 
 ## Step 1
 
-Add a `hide`{:class="block3looks"} block to the `else`{:class="block3control"} part.
+Add a `hide`{:class="block3looks"} block to the `else`{:class="block3control"} part of the `if else`{:class="block3control"} block.
 
 Then add a `broadcast`{:class="block3events"} block under it, and choose `reset`{:class="block3events"} from the drop-down.
 
@@ -27,7 +27,7 @@ end
 
 ## Step 2
 
-Add a `show`{:class="block3looks"} block to the top of the script, so the puck comes back for the next shot.
+Add a `show`{:class="block3looks"} block to the top of the script, so the **puck** comes back for the next shot.
 
 ```blocks3
 when I receive [reset v]
@@ -43,6 +43,6 @@ end
 
 ## Now run your code
 
-Click the **Green Flag** and shoot the puck. Check that the puck disappears, then reappears ready for the next shot.
+Click the **Green Flag** and shoot the **puck**. Check that the **puck** disappears, then reappears ready for the next shot.
 
 ![The puck hides one second after it is shot, then comes back to the stick.](images/step-7.gif){:width="450px"}

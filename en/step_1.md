@@ -5,7 +5,7 @@ Use the mouse to move the hockey stick.
 ## Step 1
 Click on the **stick sprite**, it has some blocks to get you started. 
 
-![stick sprite](images/stick-sprite.png){:width="150px"}
+![stick sprite](images/stick-sprite.png){:width="80px"}
 
 
 ## Step 2
@@ -41,6 +41,6 @@ end
 
 ## Now run your code
 
-Click the **Green Flag**. Check that the stick moves with the mouse pointer and stops when clicked.
+Click the **Green Flag**. Check that the **stick** moves with the mouse pointer and stops when clicked.
 
 ![The stick follows the mouse pointer and stops turning when the mouse is clicked.](images/step-1.gif){:width="450px"}

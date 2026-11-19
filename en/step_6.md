@@ -2,7 +2,7 @@
 
 Stop the puck one second after it is shot.
 
-![puck sprite](images/puck-sprite.png){:width="150px"}
+![puck sprite](images/puck-sprite.png){:width="80px"}
 
 You're still working on the **puck sprite**.
 
@@ -16,7 +16,7 @@ Hover over the `move`{:class="block3motion"} and `on edge`{:class="block3motion"
 
 ## Step 2
 
-Time less than one second by adding a `less than`{:class="block3operators"} block with `timer`{:class="block3sensing"} in the first box.
+Add a `less than`{:class="block3operators"} block with `timer`{:class="block3sensing"} in the first box.
 
 Then type `1` into the second box.
 
@@ -33,7 +33,7 @@ end
 
 > [!TIP]
 >
-> Change the number next to `timer`{:class="block3sensing"} to make the puck slide for longer.
+> Change the number next to `timer`{:class="block3sensing"} to make the **puck** slide for longer.
 
 ## Step 3
 
@@ -53,6 +53,6 @@ end
 
 ## Now run your code
 
-Click the **Green Flag** and shoot the puck. Check that the puck stops after `1` second.
+Click the **Green Flag** and shoot the **puck**. Check that the **puck** stops after `1` second.
 
 ![The puck stops one second after it is shot.](images/step-6.gif){:width="450px"}

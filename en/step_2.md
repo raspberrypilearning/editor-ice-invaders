@@ -10,13 +10,14 @@ Hover over the **Choose a Sprite** button and click **Paint**.
 
 ## Step 2
 
-Use the **paint tools** to draw a puck.
+Use the **paint tools** to draw a **puck**.
+Make sure it is in the middle of the cross in the centre of the paint window.
 
 ![The paint tools with the Brush tool selected.](images/paint-tool.png){:width="150px"}
 
 ## Step 3
 
-Adjust the number in the **Size** box until the puck is the size you want.
+Adjust the number in the **Size** box until the **puck** is the size you want.
 
 ![The Size box in the sprite panel.](images/puck-size.png){:width="250px"}
 
@@ -34,10 +35,10 @@ Name the sprite **puck** into the **Sprite** name box.
 
 ## Step 5
 
-Set the puck's **x** and **y** to `0`.
+Set the **puck**'s **x** and **y** to `0`.
 
 ![The x and y boxes in the sprite panel, both set to 0.](images/puck-pos.png){:width="250px"}
 
-You should have a puck at the centre of the stage.
+You should have a **puck** at the centre of the stage.
 
 ![A blue hockey puck sits on the stage next to the player and stick.](images/draw-puckp-output.png){:width="450px"}
